@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Order Management</title>
+    <link rel="stylesheet" href="order.css">
+    <link rel="stylesheet" href="navadmin.css">
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+    <img src="img/Screenshot_2024-05-02_212618-removebg-preview.png" alt="">
+      
+    </div>
+          <ul class="nav-links">
+            <li>
+              <a href="adminside.html">
+                <i class='bx bx-grid-alt' ></i>
+                <span class="links_name">Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="productadmin.html" >
+                <i class='bx bx-box' ></i>
+                <span class="links_name">Product</span>
+              </a>
+            </li>
+            <li>
+              <a href="order.html"  class="active">
+                <i class='bx bx-list-ul' ></i>
+                <span class="links_name">Order list</span>
+              </a>
+            </li>
+            <li>
+              <a href="receipt.html">
+                <i class='bx bx-pie-chart-alt-2' ></i>
+                <span class="links_name">Receipt</span>
+              </a>
+            </li>
+            <li>
+              <a href="team.html">
+                <i class='bx bx-user' ></i>
+                <span class="links_name">Team</span>
+              </a>
+            </li>
+    
+            <li>
+              <a href="#">
+                <i class='bx bx-cog' ></i>
+                <span class="links_name">Setting</span>
+              </a>
+            </li>
+            <li class="log_out">
+              <a href="index.html">
+                <i class='bx bx-log-out'></i>
+                <span class="links_name">Log out</span>
+              </a>
+            </li>
+          </ul>
+      </div>
+    <section class="home-section">
+        <nav>
+            <div class="sidebar-button">
+            
+                <span class="dashboard">Order list</span>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Search...">
+                <i class='bx bx-search'></i>
+            </div>
+            <div class="profile-details">
+              <img src="img/userprofile.jpg" alt="">
+                <span class="admin_name">Manager</span>
+             
+            </div>
+        </nav>
+        
+ <h2>hi</h2>
+    <table id="order-table" class="ordertable">
+        <thead>
+            <tr>
+                <th>Customer Name</th>
+                <th>Date</th>
+                <th>Product Ordered</th>
+                <th>Total Amount</th>
+                <th>Payment Method</th>
+                <th>Payment Status</th>
+                <th>Delivery Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> Off Jumpol</td>
+                <td>04/28/2024</td>
+                <td>Ball Cap</td>
+                <td>$72.00</td>
+                <td>Gcash</td>
+                <td>Paid</td>
+                <td>Preparing</td>
+                <td>
+                    <button class="accept-btn">Accept</button>
+                    <button class="cancel-btn">Cancel</button>
+                </td>
+            </tr>
+            <tr>
+            
+              <td>Sammy Pakin</td>
+              <td>04/29/2024</td>
+              <td>Image Picket</td>
+              <td>$30.00</td>
+              <td>Cash on Delivery</td>
+              <td>no payment</td>
+              <td>Preparing</td>
+              <td>
+                <button class="accept-btn">Accept</button>
+                <button class="cancel-btn">Cancel</button>
+            </td>
+          </tr>
+
+            <!-- Additional rows can be added dynamically -->
+        </tbody>
+    </table>
+    <script src="order.js"></script>
+</body>
+</html>

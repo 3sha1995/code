@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt Page Management</title>
+    <link rel="stylesheet" href="receipt.css">
+    <link rel="stylesheet" href="navadmin.css">
+    <link rel="stylesheet" href="print.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+</head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+    <img src="img/Screenshot_2024-05-02_212618-removebg-preview.png" alt="">
+      
+    </div>
+          <ul class="nav-links">
+            <li>
+              <a href="adminside.html">
+                <i class='bx bx-grid-alt' ></i>
+                <span class="links_name">Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="productadmin.html" >
+                <i class='bx bx-box' ></i>
+                <span class="links_name">Product</span>
+              </a>
+            </li>
+            <li>
+              <a href="order.html"  >
+                <i class='bx bx-list-ul' ></i>
+                <span class="links_name">Order list</span>
+              </a>
+            </li>
+            <li>
+              <a href="receipt.html" class="active">
+                <i class='bx bx-pie-chart-alt-2' ></i>
+                <span class="links_name">Receipt</span>
+              </a>
+            </li>
+            <li>
+              <a href="team.html">
+                <i class='bx bx-user' ></i>
+                <span class="links_name">Team</span>
+              </a>
+            </li>
+    
+            <li>
+              <a href="#">
+                <i class='bx bx-cog' ></i>
+                <span class="links_name">Setting</span>
+              </a>
+            </li>
+            <li class="log_out">
+              <a href="index.html">
+                <i class='bx bx-log-out'></i>
+                <span class="links_name">Log out</span>
+              </a>
+            </li>
+          </ul>
+      </div>
+    <section class="home-section">
+        <nav>
+            <div class="sidebar-button">
+                
+                <span class="dashboard">Receipt</span>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Search...">
+                <i class='bx bx-search'></i>
+            </div>
+            <div class="profile-details">
+              <img src="img/userprofile.jpg" alt="">
+                <span class="admin_name">Manager</span>
+              
+            </div>
+        </nav>
+    <div class="container">
+      
+        <form id="receiptForm">
+            <label for="customerName">Customer Name:</label><br>
+            <input type="text" id="customerName" name="customerName" required><br>
+            <label for="customerNumber">Customer Number:</label><br>
+            <input type="text" id="customerNumber" name="customerNumber" required><br>
+            <label for="customerAddress">Customer Address:</label><br>
+            <textarea id="customerAddress" name="customerAddress" required></textarea><br><br>
+            <h3>Products Ordered:</h3>
+            <table id="receipt">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody id="productList">
+                  
+                </tbody>
+            </table><br>
+            <label for="totalItems">Total Items:</label><br>
+            <input type="text" id="totalItems" name="totalItems" readonly><br>
+            <label for="shippingFee">Shipping Fee:</label><br>
+            <input type="text" id="shippingFee" name="shippingFee" required><br><br>
+            <label for="totalAmount">Total Amount Due:</label><br>
+            <input type="text" id="totalAmount" name="totalAmount" required><br>
+            <label for="paymentMethod">Payment Method:</label><br>
+            <input type="text" id="paymentMethod" name="paymentMethod" required><br><br>
+            <button type="button" class="button" onclick="printReceipt()">Print Receipt</button>
+             <button type="button" class="button" onclick="addReceipt()">Add Another Receipt</button>
+             <button id="editButton" onclick="editReceipt()">Edit</button>
+        </form>
+        </form>
+    </div>
+
+    <script src="receipt.js"></script>
+</body>
+</html>

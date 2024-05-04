@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Team Management</title>
+    <link rel="stylesheet" href="team.css">
+<link rel="stylesheet" href="navadmin.css">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+</head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+    <img src="img/Screenshot_2024-05-02_212618-removebg-preview.png" alt="">
+      
+    </div>
+          <ul class="nav-links">
+            <li>
+              <a href="adminside.html">
+                <i class='bx bx-grid-alt' ></i>
+                <span class="links_name">Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="productadmin.html" >
+                <i class='bx bx-box' ></i>
+                <span class="links_name">Product</span>
+              </a>
+            </li>
+            <li>
+              <a href="order.html"  >
+                <i class='bx bx-list-ul' ></i>
+                <span class="links_name">Order list</span>
+              </a>
+            </li>
+            <li>
+              <a href="receipt.html" >
+                <i class='bx bx-pie-chart-alt-2' ></i>
+                <span class="links_name">Receipt</span>
+              </a>
+            </li>
+            <li>
+              <a href="team.html" class="active">
+                <i class='bx bx-user' ></i>
+                <span class="links_name">Team</span>
+              </a>
+            </li>
+    
+            <li>
+              <a href="#">
+                <i class='bx bx-cog' ></i>
+                <span class="links_name">Setting</span>
+              </a>
+            </li>
+            <li class="log_out">
+              <a href="index.html">
+                <i class='bx bx-log-out'></i>
+                <span class="links_name">Log out</span>
+              </a>
+            </li>
+          </ul>
+      </div>
+    <section class="home-section">
+        <nav>
+            <div class="sidebar-button">
+            
+                <span class="dashboard">Team</span>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Search...">
+                <i class='bx bx-search'></i>
+            </div>
+            <div class="profile-details">
+              <img src="img/userprofile.jpg" alt="">
+                <span class="admin_name">Manager</span>
+            
+            </div>
+        </nav>
+    <div class="container">
+       
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Trisha at-at</td>
+                    <td>trisha@gamile.com</td>
+                    <td>Admin</td>
+                    <td>
+                        <button class="btn" onclick="editMember(this)">Edit</button>
+                        <button class="btn btn-danger" onclick="deleteMember(this)">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Khofershine Javar</td>
+                    <td>Khofer@gamile.com</td>
+                    <td>Admin</td>
+                    <td>
+                        <button class="btn" onclick="editMember(this)">Edit</button>
+                        <button class="btn btn-danger" onclick="deleteMember(this)">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Aziz Amin</td>
+                    <td>Aziz@gamile.com</td>
+                    <td>Admin</td>
+                    <td>
+                        <button class="btn" onclick="editMember(this)">Edit</button>
+                        <button class="btn btn-danger" onclick="deleteMember(this)">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <button id="addMemberButton" class="btn" style="margin-top: 20px;">Add New Member</button>
+        <div id="addMemberForm" style="display: none;">
+            <input type="text" id="newName" placeholder="Name">
+            <input type="email" id="newEmail" placeholder="Email">
+            <input type="text" id="newRole" placeholder="Role">
+            <button id="saveMemberButton" class="btn" onclick="addMember()">Save</button>
+        </div>
+    </div>
+    <script src="team.js"></script>
+</body>
+</html>

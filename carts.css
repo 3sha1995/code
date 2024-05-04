@@ -1,0 +1,125 @@
+.cartContainer {
+    display: none;
+}
+
+.cartTab {
+    width: 400px;
+    background-image: linear-gradient(to bottom, #f796ad, #89d3f8);
+    color: #ffffff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    transition: visibility 0.5s ease; 
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.total {
+    color: black;
+    margin-top: auto;
+    font-size: 20px; 
+}
+
+.btn {
+    margin-top: 20px; 
+}
+
+.cartTab h1 {
+    margin: 0;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.cartTab .listCart .item {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ffffff;
+}
+
+.cartTab .listCart .item:last-child {
+    border-bottom: none;
+}
+
+.cartTab .listCart .item img {
+    width: 70px; 
+    margin-right: 10px;
+}
+
+.cartTab .listCart .item .name {
+    flex-grow: 1;
+}
+
+.cartTab .listCart .item .totalPrice {
+    margin-left: 20px;
+}
+
+.cartTab .listCart .item .quantity {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.cartTab .listCart .item .quantity input { 
+    width: 30px;
+}
+
+.cartTab .listCart .item .quantity span {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    background-color: #EAD5B8;
+    color: #7062AD;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 5px;
+}
+.cartTab .btn .checkOut{
+    text-decoration: none;
+    padding: 20px;
+    width: 25px;
+    height: 25px;
+    background-color: #ffc1e5;
+    border-radius: 10PX;
+}
+.cartTab .btn .checkOut:hover{
+    background-image: linear-gradient(to bottom, #e76a87, #5a8ca5);
+}
+.cartTab .btn .close:hover{
+    background-image: linear-gradient(to bottom, #e76a87, #5a8ca5);
+}
+.cartTab .btn .close{
+    background-color: #ffc1e5;
+    padding: 10px;
+    border-radius: 10PX;
+}
+.cartTab .remove-item {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 18px;
+margin-left: 10px;
+}
+.checkOut{
+    color: black;
+}
+
+
+@media screen and (max-width: 768px) {
+    nav ul li {
+        margin-left: 20px;
+    }
+
+    .cartTab {
+        width: calc(100% - 40px);
+        max-width: 400px;
+        left: 20px;
+        right: 20px;
+        margin: 0 auto;
+    }
+}

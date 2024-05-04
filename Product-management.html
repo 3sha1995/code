@@ -1,0 +1,233 @@
+96% of storage used … If you run out, you can't create, edit, and upload files. Get 100 GB of storage for ₱89.00 ₱0 for 1 month.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Adminstyle.css">
+    <link rel="stylesheet" href="Adminstyle2.css">
+    <link rel="stylesheet" href="Adminstyle3.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+      </style>
+    <title>Product Management Page</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="ul-layout-1">
+                <li ><a href="Dashboard.html" class="nav-button">Dashboard</a></li>
+                <li class="display">Product Management</li>
+                <li><a href="Order-management.html" class="nav-button">Order Management</a></li>
+            </ul>
+            <ul class="ul-layout-2">
+                <li><img src="img/Logo.png" alt=""></li>
+                <li><img src="img/Nav-Button.png" alt=""></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="body-section-2">
+        <div class="Product-Section">
+            <div class="Product-header">
+                <div class="H1" style="text-align: center; color: black; font-size: 48px; font-family: Roboto Slab; font-weight: 600; word-wrap: break-word">Products</div>
+                <div class="SearchBarContainer" style="width: 1067px; padding-left: 9px; padding-right: 9px; padding-top: 5px; padding-bottom: 5px; background: white; border-radius: 25.22px; overflow: hidden; border: 1px black solid; flex-direction: column; justify-content: center; align-items: flex-start; gap: 10px; display: inline-flex">
+                  <div class="Layout" style="width: auto; align-self: stretch; justify-content: space-between; align-items: center; display: inline-flex">
+                    <div class="Search" style="justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+                      <img class="SearchIcon" style="width: 29px; height: 29px" src="https://via.placeholder.com/29x29" />
+                      <div class="SearchProductsInCatalogue" style="color: #505050; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">Search products in catalogue</div>
+                    </div>
+                    <div class="CloseIcon" style="width: 30px; height: 30px; position: relative; background: #F6EEE9; border-radius: 19.07px; border: 1px black solid">
+                      <div class="X" style="width: 13px; height: 13px; left: 8.37px; top: 8.60px; position: absolute; border: 2px black solid"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <a href="Add-product.html" class="AddNew-Product" style="padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 10px; background: #F2C2C2; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 13px; justify-content: center; align-items: center; gap: 10px; display: flex">
+                  Add new product <img src="img/Add-icon.png" alt="" style=" height:32px ; width: 32px;" >
+                </a>
+                
+                
+                <div class="Button" style="padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 10px; background: #F2C2C2; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 13px; justify-content: center; align-items: center; gap: 10px; display: flex">
+                  <div class="Edit" style="color: black; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">Edit</div>
+                  <a href="Edit-product.html" class="edit-icon" style="width: 32px; height: 32px; position: relative">
+                    <img class="icon" src="img/Edit-Icon.png" alt="">
+                  </a>
+                </div>
+            </div>
+            <div class="Product-list-container">
+                <div class="Product-Header-Row">
+                    <ul style=" width:417px; height: 24px; padding-left: 30px; padding-right: 30px; justify-content: space-between; align-items: center; display: flex">
+                      <div id="H5">Type</div>
+                      <div id="H5" >Photo</div>
+                      <div id="H5" >Name</div>
+                    </ul>
+
+                    <ul style="width: 707px ;height: 24px; padding-left: 25px; padding-right: 25px; justify-content: space-between; align-items: center; display: flex">
+                        <div id="H5">Price</div>
+                        <div id="H5">Quantity</div>
+                        <div id="H5">Status</div>
+                    </ul>    
+
+                </div>
+                 
+                <div class="Product-Body-Row">
+                    <ul style="width: 416px ;height: 50px; padding-left: 30px; padding-right: 30px; justify-content: space-between; align-items: center; display: flex">
+                      <div id="H5">Type</div>
+                      <div class="ProductImage" style="width: 50px; height: 50px; padding-left: 5px; padding-right: 5px; padding-top: 7px; padding-bottom: 7px; background: #D9D9D9; border-radius: 8px; border: 1px black solid"></div>
+                      <div id="H5">Customer</div>
+                    </ul>
+
+                    <ul style="width: 707px; height: 24px; padding-left: 25px; padding-right: 25px; justify-content: space-between; align-items: center; display: flex">
+                      <div id="H5">$500.00</div>
+                      <div id="H5">25 stock</div>
+                      <div class="Status" style="height: 24px; justify-content: space-between; align-items: center; display: flex">
+                        <div id="H5">Sale</div>
+                        <div class="StatusBar" style="width: 20px; height: 20px; background: #46BA33; border-radius: 9999px"></div>
+                      </div>
+                </div>
+                <div class="Product-Body-Row">
+                    <ul style="width: 416px ;height: 50px; padding-left: 30px; padding-right: 30px; justify-content: space-between; align-items: center; display: flex">
+                      <div id="H5">Type</div>
+                      <div class="ProductImage" style="width: 50px; height: 50px; padding-left: 5px; padding-right: 5px; padding-top: 7px; padding-bottom: 7px; background: #D9D9D9; border-radius: 8px; border: 1px black solid"></div>
+                      <div id="H5">Customer</div>
+                    </ul>
+
+                    <ul style="width: 707px; height: 24px; padding-left: 25px; padding-right: 25px; justify-content: space-between; align-items: center; display: flex">
+                      <div id="H5">$500.00</div>
+                      <div id="H5">25 stock</div>
+                      <div class="Status" style="height: 24px; justify-content: space-between; align-items: center; display: flex">
+                        <div id="H5">Sale</div>
+                        <div class="StatusBar" style="width: 20px; height: 20px; background: #46BA33; border-radius: 9999px"></div>
+                      </div>
+                </div>
+                <div class="Product-Body-Row">
+                    <ul style="width: 416px ;height: 50px; padding-left: 30px; padding-right: 30px; justify-content: space-between; align-items: center; display: flex">
+                      <div id="H5">Type</div>
+                      <div class="ProductImage" style="width: 50px; height: 50px; padding-left: 5px; padding-right: 5px; padding-top: 7px; padding-bottom: 7px; background: #D9D9D9; border-radius: 8px; border: 1px black solid"></div>
+                      <div id="H5">Customer</div>
+                    </ul>
+
+                    <ul style="width: 707px; height: 24px; padding-left: 25px; padding-right: 25px; justify-content: space-between; align-items: center; display: flex">
+                      <div id="H5">$500.00</div>
+                      <div id="H5">25 stock</div>
+                      <div class="Status" style="height: 24px; justify-content: space-between; align-items: center; display: flex">
+                        <div id="H5">Sale</div>
+                        <div class="StatusBar" style="width: 20px; height: 20px; background: #46BA33; border-radius: 9999px"></div>
+                      </div>
+                </div>
+                <div class="Product-Body-Row">
+                    <ul style="width: 416px ;height: 50px; padding-left: 30px; padding-right: 30px; justify-content: space-between; align-items: center; display: flex">
+                      <div id="H5">Type</div>
+                      <div class="ProductImage" style="width: 50px; height: 50px; padding-left: 5px; padding-right: 5px; padding-top: 7px; padding-bottom: 7px; background: #D9D9D9; border-radius: 8px; border: 1px black solid"></div>
+                      <div id="H5">Customer</div>
+                    </ul>
+
+                    <ul style="width: 707px; height: 24px; padding-left: 25px; padding-right: 25px; justify-content: space-between; align-items: center; display: flex">
+                      <div id="H5">$500.00</div>
+                      <div id="H5">25 stock</div>
+                      <div class="Status" style="height: 24px; justify-content: space-between; align-items: center; display: flex">
+                        <div id="H5">Sale</div>
+                        <div class="StatusBar" style="width: 20px; height: 20px; background: #46BA33; border-radius: 9999px"></div>
+                      </div>
+                </div>
+                <div class="Product-Body-Row">
+                    <ul style="width: 416px ;height: 50px; padding-left: 30px; padding-right: 30px; justify-content: space-between; align-items: center; display: flex">
+                      <div id="H5">Type</div>
+                      <div class="ProductImage" style="width: 50px; height: 50px; padding-left: 5px; padding-right: 5px; padding-top: 7px; padding-bottom: 7px; background: #D9D9D9; border-radius: 8px; border: 1px black solid"></div>
+                      <div id="H5">Customer</div>
+                    </ul>
+
+                    <ul style="width: 707px; height: 24px; padding-left: 25px; padding-right: 25px; justify-content: space-between; align-items: center; display: flex">
+                      <div id="H5">$500.00</div>
+                      <div id="H5">25 stock</div>
+                      <div class="Status" style="height: 24px; justify-content: space-between; align-items: center; display: flex">
+                        <div id="H5">Sale</div>
+                        <div class="StatusBar" style="width: 20px; height: 20px; background: #46BA33; border-radius: 9999px"></div>
+                      </div>
+                </div>
+                <div class="Product-Body-Row">
+                    <ul style="width: 416px ;height: 50px; padding-left: 30px; padding-right: 30px; justify-content: space-between; align-items: center; display: flex">
+                      <div id="H5">Type</div>
+                      <div class="ProductImage" style="width: 50px; height: 50px; padding-left: 5px; padding-right: 5px; padding-top: 7px; padding-bottom: 7px; background: #D9D9D9; border-radius: 8px; border: 1px black solid"></div>
+                      <div id="H5">Customer</div>
+                    </ul>
+
+                    <ul style="width: 707px; height: 24px; padding-left: 25px; padding-right: 25px; justify-content: space-between; align-items: center; display: flex">
+                      <div id="H5">$500.00</div>
+                      <div id="H5">25 stock</div>
+                      <div class="Status" style="height: 24px; justify-content: space-between; align-items: center; display: flex">
+                        <div id="H5">Sale</div>
+                        <div class="StatusBar" style="width: 20px; height: 20px; background: #46BA33; border-radius: 9999px"></div>
+                      </div>
+                </div>
+                <div class="Product-Body-Row">
+                    <ul style="width: 416px ;height: 50px; padding-left: 30px; padding-right: 30px; justify-content: space-between; align-items: center; display: flex">
+                      <div id="H5">Type</div>
+                      <div class="ProductImage" style="width: 50px; height: 50px; padding-left: 5px; padding-right: 5px; padding-top: 7px; padding-bottom: 7px; background: #D9D9D9; border-radius: 8px; border: 1px black solid"></div>
+                      <div id="H5">Customer</div>
+                    </ul>
+
+                    <ul style="width: 707px; height: 24px; padding-left: 25px; padding-right: 25px; justify-content: space-between; align-items: center; display: flex">
+                      <div id="H5">$500.00</div>
+                      <div id="H5">25 stock</div>
+                      <div class="Status" style="height: 24px; justify-content: space-between; align-items: center; display: flex">
+                        <div id="H5">Sale</div>
+                        <div class="StatusBar" style="width: 20px; height: 20px; background: #46BA33; border-radius: 9999px"></div>
+                      </div>
+                </div>
+                
+            </div>
+
+        </div>
+    </section>
+</body>
+<footer class="Footer-Section">
+  <div class="Footer-Content-Container" style="justify-content: flex-start; align-items: flex-start; gap: 300px; display: inline-flex">
+      <div class="Footer-column-1">
+          <img src="img/Logo.png" alt="">
+          <br>
+          <div class="Social-Media-Container">
+              <h4>Social Media</h4>
+              <img class="icon" src="img/facebook-icon.png" alt="">
+              <img class="icon" src="img/Twitter-icon.png" alt="">
+              <img class="icon" src="img/Instagram-icon.png" alt="">
+          </div>
+      </div>
+      <div class="Footer-column-2">
+          <div class="ShopUl" style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 20px; display: inline-flex">
+              <div class="Shop" style="color: black; font-size: 22px; font-family: Roboto Slab; font-weight: 500; text-transform: uppercase; word-wrap: break-word">SHOP</div>
+              <div class="Products" style="color: black; font-size: 20px; font-family: Poppins; font-weight: 500; text-transform: capitalize; word-wrap: break-word">Products</div>
+              <div class="Overview" style="color: black; font-size: 20px; font-family: Poppins; font-weight: 500; text-transform: capitalize; word-wrap: break-word">Overview</div>
+              <div class="Pricing" style="color: black; font-size: 20px; font-family: Poppins; font-weight: 500; text-transform: capitalize; word-wrap: break-word">Pricing</div>
+              <div class="Releases" style="color: black; font-size: 20px; font-family: Poppins; font-weight: 500; text-transform: capitalize; word-wrap: break-word">Releases</div>
+          </div>
+          
+          <div class="CompanyUl" style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 20px; display: inline-flex">
+              <div class="Company" style="color: black; font-size: 22px; font-family: Roboto Slab; font-weight: 500; text-transform: uppercase; word-wrap: break-word">Company</div>
+              <div class="AboutUs" style="color: black; font-size: 20px; font-family: Poppins; font-weight: 500; text-transform: capitalize; word-wrap: break-word">About us</div>
+              <div class="Contact" style="color: black; font-size: 20px; font-family: Poppins; font-weight: 500; text-transform: capitalize; word-wrap: break-word">Contact</div>
+              <div class="News" style="color: black; font-size: 20px; font-family: Poppins; font-weight: 500; text-transform: capitalize; word-wrap: break-word">News</div>
+              <div class="Support" style="color: black; font-size: 20px; font-family: Poppins; font-weight: 500; text-transform: capitalize; word-wrap: break-word">Support</div>
+            </div>
+          <div class="Address" style="width: 210px; height: 99.01px; position: relative">
+              <div class="LoremIpsum0000" style="left: -0px; top: 47.01px; position: absolute; color: black; font-size: 18px; font-family: Roboto; font-weight: 400; word-wrap: break-word">Lorem Ipsum 0000</div>
+              <div class="LoremIpsumLoremIpsum" style="left: -0px; top: 78.01px; position: absolute; color: black; font-size: 18px; font-family: Roboto; font-weight: 400; word-wrap: break-word">Lorem ipsum lorem ipsum</div>
+              <div class="Address" style="left: 0px; top: 0px; position: absolute; color: black; font-size: 24px; font-family: Roboto; font-weight: 400; word-wrap: break-word">Address</div>
+          </div>
+      </div>
+  </div>
+
+  <div class="TermsPolicy" style="justify-content: flex-start; align-items: center; gap: 32.37px; display: inline-flex">
+      <div class="Line7" style="width: 1284.58px; height: 0px; border: 2.13px black solid"></div>
+      <div class="Buttom" style="justify-content: flex-start; align-items: flex-start; gap: 32.37px; display: flex">
+        <div class="Terms" style="color: black; font-size: 18.50px; font-family: Poppins; font-weight: 600; text-transform: capitalize; word-wrap: break-word">Terms</div>
+        <div class="Privacy" style="color: black; font-size: 18.50px; font-family: Poppins; font-weight: 600; text-transform: capitalize; word-wrap: break-word">Privacy</div>
+        <div class="Cookies" style="color: black; font-size: 18.50px; font-family: Poppins; font-weight: 600; text-transform: capitalize; word-wrap: break-word">Cookies</div>
+      </div>
+  </div>
+  <div class="ButtomColor" style="width: 100%; height: 49px; position: relative; background: black; box-sizing: border-box;"></div>
+      
+  
+</footer>
+</html>

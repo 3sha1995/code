@@ -1,0 +1,527 @@
+@font-face {
+    font-family: monospace;
+    src: url(fonts/Roboto-Medium.ttf);
+  }
+  body{
+    margin:0;
+    background-image: linear-gradient(to right, #ffd1dc, #d9edf7);
+    font-family:monospace;
+  }
+  
+  .navbar {
+    background-color: pink; /* Set the background color */
+    /* Prevent content from overflowing */
+    position: relative; /* Needed for dropdown positioning */
+    height: 60px; /* Increase height to 60px (adjust as needed) */
+  }
+  
+  /* Style the unordered list */
+  .navbar ul {
+   list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Arrange items horizontally */
+    align-items: center; /* Vertically center items */
+  }
+  
+  /* Style the list items */
+  .navbar li {
+    margin-right: 25px; /* Add space between items */
+    
+  }
+  
+  /* Style anchor tags within list items */
+  .navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px; /* Increase padding */
+    transition: background-color 0.3s ease;
+    font-size: 16px; /* Increase font size */
+    line-height: 60px; /* Vertically center text */
+  }
+  
+  /* Style hover effect for anchor tags */
+  .navbar li a:hover {
+    background-color: #f08080; /* Change background on hover */
+  }
+  
+  /* Style the dropdown button */
+  .dropdown {
+    display: inline-block;
+  }
+  
+  .dropbtn {
+    cursor: pointer; /* Indicate clickable on hover */
+  }
+  
+  /* Hide the dropdown content by default */
+  .dropdown-content {
+    display: none;
+    position: absolute; /* Position relative to the button */
+    background-color: pink; /* Match background color */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Add shadow */
+    z-index: 1; /* Ensure content appears above other elements */
+  
+  }
+  
+  /* Style dropdown content links */
+  .dropdown-content a {
+    color: black; /* Text color */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease; /* Hover effect */
+  }
+  
+  /* Style hover effect for dropdown links */
+  .dropdown-content a:hover {
+    background-color: #f0f0f0; /* Change background on hover */
+  }
+  
+  /* Show the dropdown content on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Style the logo */
+  .logo {
+    margin-left: auto; /* Move logo to the right */
+    margin-right: 20px; /* Add space after logo */
+  }
+  
+  .logo img {
+    width: 20%; /* Adjust as needed, use % for responsiveness */
+    max-width: 150px; /* Set a maximum width if needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Style the search container */
+  .search-container {
+    position: relative; /* Needed for icon positioning */
+  }
+  
+  .search-container input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 4px; /* Add rounded corners */
+    width: 150px; /* Set search bar width */
+    transition: border-color 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .search-container input[type="text"]:focus {
+    border-color: #f08080; /* Change border color on focus */
+  }
+  
+  .search-container button {
+    position: absolute; /* Position icon inside search bar */
+    right: 10px; /* Place icon at right side */
+    top: 50%; /* Vertically center icon */
+    transform: translateY(-50%); /* Adjust for button height */
+    background-color: transparent;
+    border: none;
+    cursor: pointer; /* Indicate clickable on hover */
+  }
+  
+  /* Style the icons (adjust image paths) */
+  .navbar li img {
+    width: 20px; /* Set icon width */
+    height: 20px; /* Set icon height */
+  }
+  
+  /* Responsiveness (optional) */
+  
+  /* Hero Section */
+  
+  .hero {
+    margin-top: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .hero-image {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+  }
+  
+  .hero-content {
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  
+  h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+  }
+  
+  p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+  }
+  
+  .shop-now-btn {
+      background-color: #e0e0e0; /* Light gray */
+      color: #333; /* Black */
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.2s ease-in-out;
+  }
+  
+  .shop-now-btn:hover {
+      background-color: #776364; /* Light purple */
+      color: #fff; /* White */
+  }
+  
+  .product-container {
+    display: flex; /* Arrange cards horizontally */
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+    width: 95%; /* Adjust width as needed */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 10px;
+    justify-content: center;
+    gap: 10px; 
+   
+    
+  }
+  
+  .product {
+     /* Spacing between cards */
+     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Example shadow */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: calc(33% - 20px); /* Adjust width for 3 columns */
+    margin-left: 20px;
+    text-align: center;
+  }
+  
+  .product-image {
+    width: 100%;
+    height: 200px; /* Adjust height as needed */
+    object-fit: cover;
+  }
+  
+  .product-details {
+      display: flex; /* Enable flexbox for product details */
+      flex-direction: column; /* Arrange elements vertically (name above price) */
+      align-items: flex-start; /* Align content to the left */
+      padding: 5px;
+    }
+    
+    .product-name {
+      font-weight: bold;
+      font-size: 16px;
+      margin-bottom: 5px;
+      text-align: center;
+    }
+    
+    .product-price {
+      color: #333;
+      text-align: center;
+    }
+  .add-to-cart-btn {
+    background-color: rgb(241, 162, 175);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 10px; /* Add spacing after product details */
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2); /* Example shadow */
+  }
+  
+  
+  .product {
+      display: flex;
+      flex-direction: column; /* Stack elements vertically */
+      align-items: center;
+      position: relative; /* For product-background */
+      width: 200px; /* Adjust width as needed */
+      height: 300px; /* Adjust height as needed */
+      border: 1px solid #ddd;
+      margin: 10px;
+      padding: 10px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  
+  
+    
+    /* Optional: Add hover effect for the button */
+    
+    .add-to-cart-btn:hover {
+        background-image: linear-gradient(to right, #fa9ab1, #7bb1cc);
+    }
+    .category-buttons {
+      display: flex;
+      flex-wrap: wrap; /* Wrap buttons to fit on a single line */
+      margin: 0; /* Remove default margin */
+      padding: 0; /* Remove default padding */
+    }
+    
+    .category-button {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; /* Space text and icon */
+      padding: 10px 20px;
+      border: 1px solid #ddd; /* Button border */
+      border-radius: 5px; /* Rounded corners */
+      margin: 5px; /* Space between buttons */
+      cursor: pointer; /* Indicate clickable behavior */
+      background-color: #fff; /* Button background */
+    }
+    
+    .category-button:hover {
+      background-color: #f5f5f5; /* Slight background change on hover */
+    }
+    
+    .category-text {
+      font-weight: bold;
+    }
+    
+    .category-icon {
+      /* Add styling for your desired category icons here */
+      width: 20px; /* Adjust icon size as needed */
+      height: 20px; /* Adjust icon size as needed */
+      /* Consider using font icons or SVGs for flexibility */
+    }
+    .footer {
+      background: pink; /* Light gray */
+       padding: 30px 0;
+       display: flex;
+       justify-content: space-between;
+       align-items: flex-start;
+   }
+   
+   .footer-container {
+       display: flex;
+       flex-wrap: wrap;
+       width: 80%;
+       margin: 0 auto;
+   }
+   
+   .footer-company,
+   .footer-links,
+   .footer-info {
+       flex: 1;
+   }
+   
+   .footer-company p {
+       margin-bottom: 10px;
+   }
+   
+   .link-list {
+       list-style: none;
+       margin: 0;
+       padding: 0;
+   }
+   
+   .link-list li {
+       margin-bottom: 10px;
+   }
+   
+   .link-list a {
+       color: #333;
+       text-decoration: none;
+       transition: color 0.2s ease-in-out;
+   }
+   
+   .link-list a:hover {
+       color: #800080; /* Light purple */
+   }
+   
+   .lorem-text {
+       margin: 10px 0;
+       font-style: italic;
+   }
+   .container {
+       display: flex; /* Change to flexbox for centering */
+       justify-content: center; /* Horizontally center */
+       align-items: center; /* Vertically center */
+     }
+     .dress {
+      display: flex;
+      margin-left: 2%;
+    /* Enable flexbox */
+      /* Distribute evenly */
+      
+    }
+   h2{
+      font-family: monospace;
+      margin-left: 20px;
+      margin-top: 32px ;
+    
+    }
+     .dress button {
+      /* Basic styling */
+      box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2); /* Example shadow */
+      margin-left: 20px;
+      margin-top: 25px ;
+      margin-bottom: 20px;
+      background-color: #facae6; /* Light gray background */
+      color: #333; /* Dark gray text */
+      padding: 10px 20px; /* Inner padding */
+      border: none; /* Remove default border */
+      border-radius: 10px; /* Rounded corners */
+      cursor: pointer; /* Indicate clickable element */
+      width: 100px;
+    
+      /* Optional hover effect */
+      &:hover {
+        background-image: linear-gradient(to bottom, #ffd1dc, #a7ccdf); /* Slightly darker on hover */
+      }
+    }
+    .dress button a{
+      color: black;
+  
+    }
+    .filters {
+      margin-bottom: 10px;
+      margin-left: 50%;
+    
+      margin-top: 25px ;
+      margin-bottom: 20px;
+    }
+    
+    .filters label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    
+    #product-list {
+      list-style: none;
+      padding: 0;
+    }
+    .filters label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    .sort-select {
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      cursor: pointer; /* Indicate hover interaction */
+    }
+    
+    .sort-select:hover {
+      background-color: #f0f0f0; /* Change background color on hover */
+    }  
+    .cartContainer {
+        display: none;
+    }
+    
+    .cartTab {
+        width: 400px;
+        background-image: linear-gradient(to bottom, #f796ad, #89d3f8);
+        color: #ffffff;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        padding: 20px;
+        overflow-y: auto;
+    }
+    
+    .cartTab h1 {
+        margin: 0;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+    
+    .cartTab .listCart .item {
+        display: flex;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #ffffff;
+    }
+    
+    .cartTab .listCart .item:last-child {
+        border-bottom: none;
+    }
+    
+    .cartTab .listCart .item img {
+        width: 70px;
+        margin-right: 10px;
+    }
+    
+    .cartTab .listCart .item .name {
+        flex-grow: 1;
+    }
+    
+    .cartTab .listCart .item .totalPrice {
+        margin-left: 20px;
+    }
+    
+    .cartTab .listCart .item .quantity {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+    }
+    
+    .cartTab .listCart .item .quantity span {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        text-align: center;
+        line-height: 25px;
+        background-color: #EAD5B8;
+        color: #7062AD;
+        border-radius: 50%;
+        cursor: pointer;
+        margin: 0 5px;
+    }
+    
+    /* Responsive styles */
+    @media screen and (max-width: 768px) {
+        nav ul li {
+            margin-left: 20px;
+        }
+    
+        .cartTab {
+            width: calc(100% - 40px);
+            max-width: 400px;
+            left: 20px;
+            right: 20px;
+            margin: 0 auto;
+        }
+    }
+    .pagination {
+        margin-bottom: 20px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .pagination button {
+        padding: 8px 12px;
+        margin: 0 5px;
+        border: none;
+        background-color: #f08080;
+        color: white;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .pagination button:hover {
+        background-color: #ff6b6b;
+    }
+    
+    .pagination button.active {
+        background-color: #c0392b;
+    }

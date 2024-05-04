@@ -1,0 +1,342 @@
+@font-face {
+  font-family: DosisM ;
+  src: url(fonts/Dosis-Medium.ttf);
+}
+@font-face {
+  font-family: creamy;
+  src: url(fonts/Super\ Creamy\ Personal\ Use.ttf);
+}
+@font-face {
+  font-family: gallery;
+  src: url(fonts/Super\ Gallery\ Personal\ Use.ttf);
+}
+@font-face {
+  font-family: raspherie ;
+  src: url(fonts/RaspberiePersonalUseOnly.ttf);
+}
+@font-face {
+  font-family: made ;
+  src: url(fonts/MADEAwelierPERSONALUSE-Medium.otf);
+}
+@font-face {
+  font-family: variera ;
+  src: url(fonts/VarieraDemo-SemiBold.ttf);
+}
+@font-face {
+  font-family: amoura;
+  src: url(fonts/Amoura\ Rosbele.otf);
+}
+@font-face {
+  font-family: helios ;
+  src: url(fonts/Helios\ Retro\ -Regular.ttf);
+}
+body {
+    background-image: linear-gradient(to right, #ffd1dc, #d9edf7);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+   
+}
+  .product-container {
+    display: flex; 
+    flex-wrap: wrap; 
+    width: 95%; 
+    margin: 0 auto; 
+    padding: 10px;
+    justify-content: center;
+    gap: 10px; 
+   
+   
+    
+  }
+  
+  .product {
+   position: relative;
+     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: calc(33% - 20px); 
+    margin-left: 20px;
+   
+  }
+  
+  .product-image {
+    width: 100%;
+    height: 180px; 
+    object-fit: cover;
+  }
+  
+  .product-details {
+      display: flex; 
+      position: absolute;
+      flex-direction: column; 
+    bottom: 20%;
+    left: 10%;
+      padding: 5px;
+    }
+    
+    .product-name {
+      font-family: variera ;
+
+      font-size: 18px;
+      margin-bottom: 5px;
+      text-align: left;
+  
+    }
+    
+    .product-price {
+      color: #333;
+      text-align: left;
+    }
+  .add-to-cart-btn {
+    position: absolute;
+    background-color: rgb(241, 162, 175);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-family: amoura;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 10px; 
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2); 
+    margin-bottom: 5px;
+    width: 80%; 
+    
+  bottom: 10px; 
+ 
+  
+  }
+  
+  
+  .product {
+      display: flex;
+      flex-direction: column; 
+      align-items: center;
+      position: relative; 
+      width: 200px; 
+      height: 300px; 
+      border: 1px solid #ddd;
+      margin: 10px;
+      padding: 10px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  
+  
+    
+    
+    
+    .add-to-cart-btn:hover {
+        background-image: linear-gradient(to right, #fd8ba5, #7db5d1); 
+        color: black;
+    }
+  
+    .footer {
+      background: pink; 
+       padding: 30px 0;
+       display: flex;
+       justify-content: space-between;
+       align-items: flex-start;
+   }
+   
+   .footer-container {
+       display: flex;
+       flex-wrap: wrap;
+       width: 80%;
+       margin: 0 auto;
+   }
+   
+   
+   .container {
+       display: flex; 
+       justify-content: center; 
+       align-items: center; 
+     }
+     .dress {
+      display: flex;
+     
+      margin-left: 2%;
+    
+      
+    }
+   h2{
+      font-family: monospace;
+      margin-left: 20px;
+      margin-top: 32px ;
+    
+    }
+     .dress button {
+      
+      font-family: amoura;
+     font-size: 16px;
+      box-shadow: 0 5px 5px rgba(0.2, 0, 0, 0.2); 
+      margin-left: 35px;
+      margin-top: 30px ;
+      margin-bottom: 20px;
+      background-color: #facae6; 
+      color: #000000;
+      padding: 10px 20px; 
+      border: none; 
+      border-radius: 10px; 
+      cursor: pointer; 
+      width: 100%;
+    
+      
+      &:hover {
+        background-image: linear-gradient(to bottom, #fd8ba5, #7db5d1); 
+      }
+    }
+    .dress button a{
+      color: black;
+  
+    }
+    .filters {
+      
+      margin-left: 50%;
+     margin-right:20% ;
+      margin-top: 30px ;
+      margin-bottom: 20px;
+    }
+    
+    .filters label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    
+    #product-list {
+      list-style: none;
+      padding: 0;
+    }
+    .filters label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    .sort-select {
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      cursor: pointer; 
+    }
+    
+    .sort-select:hover {
+      background-color: #f0f0f0; 
+    }  
+    .cartContainer {
+      display: flex;
+  }
+  
+  .cartTab {
+      width: 400px;
+      background-image: linear-gradient(to bottom, #f796ad, #89d3f8);
+      color: #ffffff;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      padding: 20px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+  
+  .total {
+      color: black;
+      margin-top: auto;
+      font-size: 20px;
+  }
+  
+  .btn {
+      margin-top: 20px;
+  }
+  
+  .cartTab h1 {
+      margin: 0;
+      font-weight: 500;
+      margin-bottom: 20px;
+  }
+  
+  .cartTab .listCart .item {
+      display: flex;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #ffffff;
+  }
+  
+  .cartTab .listCart .item:last-child {
+      border-bottom: none;
+  }
+  
+  .cartTab .listCart .item img {
+      width: 70px;
+      margin-right: 10px;
+  }
+  
+  .cartTab .listCart .item .name {
+      flex-grow: 1;
+  }
+  
+  .cartTab .listCart .item .totalPrice {
+      margin-left: 20px;
+  }
+  
+  .cartTab .listCart .item .quantity {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+  }
+  
+  .cartTab .listCart .item .quantity input {
+      width: 30px;
+  }
+  
+  .cartTab .listCart .item .quantity span {
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      text-align: center;
+      line-height: 25px;
+      background-color: #EAD5B8;
+      color: #7062AD;
+      border-radius: 50%;
+      cursor: pointer;
+      margin: 0 5px;
+  }
+  .cartTab .btn .checkOut{
+      text-decoration: none;
+      padding: 20px;
+      width: 25px;
+      height: 25px;
+      background-color: #ffc1e5;
+      border-radius: 10PX;
+  }
+  .cartTab .btn .close{
+      background-color: #ffc1e5;
+      padding: 10px;
+      border-radius: 10PX;
+  }
+  .cartTab .remove-item {
+      width: 100px;
+      height: 50px;
+      border-radius: 10px;
+      margin-top: 18px;
+  margin-left: 10px;
+  }
+  
+  
+ 
+  @media screen and (max-width: 768px) {
+      nav ul li {
+          margin-left: 20px;
+      }
+  
+      .cartTab {
+          width: calc(100% - 40px);
+          max-width: 400px;
+          left: 20px;
+          right: 20px;
+          margin: 0 auto;
+      }
+  }
+  

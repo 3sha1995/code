@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Navigation Bar</title>
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="navbar.css">
+    <script src="product.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> </head>
+</head>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn">Categories</a>
+            <div class="dropdown-content">
+              <a href="njalbums.html">New Jeans</a>
+              <a href="formis9.html">Formis_9</a>
+              <a href="lesserafim.html">Lesserafim</a>
+    
+            </div>
+          </li>
+        
+          <div class="logo">
+         <img src="img/Screenshot_2024-05-02_212618-removebg-preview.png" alt="">
+        </div>
+          <li class="search-container">
+            <input type="text" placeholder="Search">
+            <button type="submit"><img src="img/bx-search.svg" alt="Search"></button>
+          </li>
+          <div class="dropdownuser">
+            <button class="dropbtn"><img src="img/bx-user.svg" alt="User"></button>
+            <div class="dropdown-content">
+
+              <a href="profile.html">Profile</a>
+              <a href="adminside.html">Admin</a>
+              <a href="loginsignup.html">Login/Signup</a>
+            </div>
+          </div>
+          <li><a href="#" id="cart-link"><img src="img/bx-cart.svg" alt="Cart"></a></li>
+         
+        </ul>
+      </nav>
+     
+
+   
+      <section class="hero">
+        <img src="img/hero4.jpg" alt="Hero Image" class="hero-image">
+        <div class="hero-overlay"></div> <!-- Overlay added here -->
+        <div class="hero-content">
+          <div class="containerhero">
+            <h1 class="gradient-text"> Welcome to Our Store! </h1> 
+          </div>
+          <p></p>
+        </div>
+      </section>
+    
+        <section class="collection">
+            <h2>Categories</h2>
+            <div class="product-container">
+                <div class="product">
+                    <img src="img/nw.jpg" alt="Product 1">
+                    <p>New jeans</p>
+                    <a href="njalbums.html" class="explore-more-btn">Explore More</a>
+                </div>
+                <div class="product">
+                    <img src="img/ls.jpg" alt="Product 2">
+                    <p>Lesserafim</p>
+                    <a href="lesserafim.html" class="explore-more-btn">Explore More</a>
+                </div>
+                <div class="product">
+                    <img src="img/f9.jpg" alt="Product 3">
+                    <p>FORMIS_9</p>
+                    <a href="formis9.html" class="explore-more-btn">Explore More</a>
+                </div>
+            </div>
+          
+        </section>
+    
+        <section class="sale-banner">
+          <img src="img/banner3.jpg" alt="Sale Banner">
+      </section>
+        <section class="products">
+          <h2>Our Products</h2>
+          <div class="product-container">
+              <div class="product">
+                  <img src="newjeans/a1.png" alt="Product 7">
+                  <div class="overlay">
+                      <button class="product-button">Button 1</button>
+                      <button class="product-button">Button 2</button>
+                      <button class="product-button">Button 3</button>
+                  </div>
+                  <p>Album</p>
+              </div>
+              <div class="product">
+                  <img src="lesserafim/tm1.png" alt="Product 9">
+                  <div class="overlay">
+                      <button class="product-button">Button 1</button>
+                      <button class="product-button">Button 2</button>
+                      <button class="product-button">Button 3</button>
+                  </div>
+                  <p>Merch</p>
+              </div>
+              <div class="product">
+                  <img src="lesserafim/m2.png" alt="Product 10">
+                  <div class="overlay">
+                      <button class="product-button">Button 1</button>
+                      <button class="product-button">Button 2</button>
+                      <button class="product-button">Button 3</button>
+                  </div>
+                  <p>Tour Merch</p>
+              </div>
+              <div class="product">
+                  <img src="newjeans/sg1.png" alt="Product 11">
+                  <div class="overlay">
+                      <button class="product-button">Button 1</button>
+                      <button class="product-button">Button 2</button>
+                      <button class="product-button">Button 3</button>
+                  </div>
+                  <p>Season Greetings</p>
+              </div>
+          </div>
+      </section>
+      
+     
+        <div class="container">
+          <div class="new-arrival-section">
+            <div class="header">New Arrival</div>
+            <div class="new-arrival">
+              <div class="image-container"> 
+                <div class="div">
+                  <div class="image-hover">
+                    <img class="img" src="newjeans/a1.png" />
+                    <div class="overlay">
+                      <p class="product-name">'How Sweet' standard ver.</p>
+                      <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                  </div>
+                  <div class="image-hover">
+                    <img class="img" src="lesserafim/tm1.png" />
+                    <div class="overlay">
+                      <p class="product-name">Image Picket</p>
+                      <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="div">
+                  <div class="image-hover">
+                    <img class="img" src="album/f92.png" />
+                    <div class="overlay">
+                      <p class="product-name">'UMW'Compact</p>
+                      <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                  </div>
+                  <div class="image-hover">
+                    <img class="img" src="merch/ls5.png" />
+                    <div class="overlay">
+                      <p class="product-name">Ball Cap</p>
+                      <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="div">
+                  <div class="image-hover">
+                    <img class="img" src="album/f910.jpg" />
+                    <div class="overlay">
+                      <p class="product-name">Funny Factory</p>
+                      <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                  </div>
+                  <div class="image-hover">
+                    <img class="img" src="formis_9/sg1.png" />
+                    <div class="overlay">
+                      <p class="product-name">SeasonGreetings luck</p>
+                      <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+      
+        
+    
+     
+        
+        <div id="cartContainer" class="cartContainer">
+          <div class="cartTab">
+          <h1>Shopping Cart</h1>
+          <div class="listCart">
+              <div class="item">
+                  <div class="image">
+                      <img src="./shop/op1.png" alt="">
+                  </div>
+                  <div class="name">
+                      Nine Part Piece RC5
+                  </div>
+                  <div class="totalPrice">
+                      $0
+                  </div>
+                  <div class="quantity">
+                      <input type="number" class="quantity-input" value="1" min="1">
+                  </div>
+                  <button class="remove-item">Remove</button> <!-- Button to remove the product -->
+              </div>
+          </div>
+          <div class="total">
+          <span>Total Amount Due:</span>
+          <span class="total-amount">$0.00</span> <!-- Correct class name for displaying total amount due -->
+      </div>
+          <div class="btn">
+              <button class="close">Close</button>
+              <a href="checkout.html" class="checkOut">Checkout</a>
+  
+          </div>
+        </div>
+        </div>
+    </div>
+    <script src="cart.js"></script>
+   
+    <script src="shoppingCart.js"></script>
+    <script src="filter.js"></script>
+</body>
+<footer class="footer">
+    <div class="footer-container">
+      <div class="footer-copyright">
+        <p>&copy; 2024 FNL9</p>
+      </div>
+      <div class="footer-links">
+        <ul class="link-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+      <div class="footer-contact">
+        <p><strong>Contact Us:</strong></p>
+        <p>Email: <a href="FNL9@gmail.com">youremail@yourdomain.com</a></p>
+        <p>Phone: +64 (09) 0000000000</p>
+      </div>
+      <div class="footer-legal">
+        <p><a href="#">Terms & Conditions</a> | <a href="#">Privacy Policy</a></p>
+      </div>
+      
+    </div>
+  </footer>
+</html>

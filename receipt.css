@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+ 
+    width: 100%;
+height: 80%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+}
+
+#receiptForm{
+    margin-top: 100px;
+margin-left: 70px;
+width: 100%;
+   
+}
+#receipt{
+
+    border-collapse: collapse;
+    width: 80%;
+}
+
+#receipt th, #receipt td {
+    border: 1px solid #000000;
+    padding: 8px;
+    text-align: left;
+}
+
+#receipt th {
+    background-color: #aad1fd;
+}
+
+.button {
+    background-color: #6090d8;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.button:hover{
+    background-image: linear-gradient(to bottom, #e76a87, #5a8ca5);
+}
+#editButton {
+    background-color: #6090d8;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#editButton:hover {
+    background-image: linear-gradient(to bottom, #e76a87, #5a8ca5);
+}

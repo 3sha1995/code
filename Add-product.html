@@ -1,0 +1,293 @@
+96% of storage used … If you run out, you can't create, edit, and upload files. Get 100 GB of storage for ₱89.00 ₱0 for 1 month.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Adminstyle.css">
+    <link rel="stylesheet" href="Adminstyle2.css">
+    <link rel="stylesheet" href="Adminstyle3.css">
+    <link rel="stylesheet" href="script.js">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+      </style>
+    <title>Add Product Page</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+        <ul class="ul-layout-1">
+            <li ><a href="Dashboard.html" class="nav-button">Dashboard</a></li>
+            <li class="display">Product Management</li>
+            <li><a href="Order-management.html" class="nav-button">Order Management</a></li>
+        </ul>
+        <ul class="ul-layout-2">
+            <li><img src="img/Logo.png" alt=""></li>
+            <li><img src="img/Nav-Button.png" alt=""></li>
+        </ul>
+    </nav>
+  </header>
+  <section class="add-body-section">
+    <div class="product-section">
+      <div class="ProductHeader" style="justify-content: flex-start; align-items: center; gap: 23px; display: inline-flex">
+        <a href="Product-management.html" class="Button" style="width:67px; height: 62.95px; padding: 20px; background: white; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 13px; justify-content: center; align-items: center; gap: 10px; display: flex">
+            <img class="icon" src="img/Back-Icon.png" alt="">
+        </a>
+
+        <div class="Title" style="flex-direction: column; justify-content: center; align-items: flex-start; display: inline-flex">
+            <h3>Back to product list</h3>
+            <h1>Add New Products</h1>
+        </div>
+      </div>
+    
+      <form id="productForm">
+        <div class="add-column-1">
+          <div class="Description-Section" style="width: 100%; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 20px; display: flex; position: relative">
+            <h2>Description</h2>
+            <div class="container">
+              <div class="Row1" style="align-self: stretch; padding: 0 40px ; display: flex; height: 118px; flex-direction: column; justify-content: center; align-items: flex-start; gap: 20px">
+                <label for="productName" class="label">Product Name</label>
+                <input type="text" id="productName" placeholder="Product Name" required >
+              </div>
+                    
+              <div class="Row2" style="align-self: stretch; padding: 40px; display: flex; height: 118px; flex-direction: column; justify-content: center; align-items: flex-start; gap: 20px">
+                <label for="productDescription" class="label">Product Description:</label>
+                <textarea id="productDescription" placeholder="Enter product Description" required></textarea>
+              </div>
+            </div>
+          </div>
+  
+          <div class="CategorySection" style=" width: 100%; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 20px; display: flex; position: relative">
+            <h2>Category</h2>
+            <div class="container">
+              <div class="Row1" style= "align-self: stretch; padding: 0 40px ; display: flex; height: 118px; flex-direction: column; justify-content: center; align-items: flex-start; gap: 20px">
+                <label for="productCategory" class="label">Wear Type:</label>
+                <select id="wearType" required>
+                  <option value="dress">Dress</option>
+                  <option value="top">Top</option>
+                  <option value="set">Set</option>
+                  <option value="knit">Knit</option>
+                  <option value="outer">Outer</option>
+                </select>
+              </div>
+  
+              <div class="Row2" style="align-self: stretch; padding: 0 40px ; display: flex; height: 118px; flex-direction: column; justify-content: center; align-items: flex-start; gap: 20px">
+                <label for="productCategory" class="label">Product Category:</label>
+                <select id="productCategory" required>
+                  <option value="collection">Collection</option>
+                  <option value="best-selling">Best Selling</option>
+                  <option value="new-arrival">New Arrival</option>
+                  <option value="sale">Sale</option>
+                </select>
+              </div>
+            </div>
+          </div>
+  
+          <div class="InventorySection" style="width: 100%; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 20px; display: flex; position: relative ">
+            <h2>Inventory</h2>
+            <div class="Container" style="width:100%; height: 198px; background: #FBF7F4; border-radius: 24px; overflow: hidden; border: 1px #594647 solid; flex-direction: column; justify-content: center; align-items: center; display: flex">
+              
+              <div class="Row1" style="padding: 0 20px; align-self: stretch; justify-content: space-evenly; align-items: flex-start; gap: 20px; display: inline-flex">
+                <div class="QuantitySection" style="width: 50%; flex-direction: column; justify-content: space-evenly; align-items: flex-start; gap: 20px; display: inline-flex">
+                  <label for="productQuantity" class="label">Quantity:</label>
+                  <input type="number" id="productQuantity" placeholder="Enter quantity">
+                </div>
+  
+                <div class="SkuSection" style="width: 50%; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 20px; display: inline-flex">
+                  <label for="productSKU" class="label">SKU (Optional):</label>
+                  <input type="text" id="productSKU" placeholder="00-00-00">
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="SellingTypeSection" style="width:100%; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 20px; display: flex; position: relative" >
+            <h2>Selling Type</h2>
+            <div class="container" id="rad">
+              <div class="radio-container">
+                <input type="radio" id="onlineSelling" name="sellingType" value="online">
+                <label for="onlineSelling">Online Selling</label>
+              </div>
+              
+              <div class="radio-container">
+                <input type="radio" id="inStoreSelling" name="sellingType" value="instore" >
+                <label for="inStoreSelling">In-store Selling</label>
+              </div>
+              
+              <div class="radio-container">
+                <input type="radio" id="bothSelling" name="sellingType" value="both">
+                <label for="bothSelling">Both Online and In-store Selling</label>
+              </div>
+             
+            </div>
+          </div>
+  
+          <div class="VariantSection" style="width:100% ;flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 20px; display: flex; position: relative">
+            <h2>Product Variant</h2>
+            <div class="container">
+              <div class="Ul" style="align-self: stretch; justify-content: space-evenly; align-items: center; display: inline-flex">
+                <div class="H3" style="color: #505050; font-size: 24px; font-family: Inter; font-weight: 500; word-wrap: break-word">Product Variant</div>
+                  <div class="Button" style="padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 10px; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.40); border-radius: 13px; justify-content: center; align-items: center; gap: 10px; display: flex">
+                    <div class="AddNewProduct" style="color: #594647; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">Add new product</div>
+                    <img src="img/Add-icon.png" class="AddIcon" style="width: 16.14px; height: 16.14px ">
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+            
+        <div class="add-column-2">
+            <div class="ProductImageSection" style="width:100%; flex-direction: column; justify-content: flex-start; align-items: center; gap: 20px; display: flex; position: relative">
+              <h2>Product Images</h2>
+              <div class="container" >
+                <div class="imageContainer" style="  height: 193px;  mix-blend-mode: multiply; background: #F2E6DF; border-radius: 24px; overflow: hidden; border: 2px black dotted; flex-direction: column; justify-content: center; align-items: center;  display: inline-flex">
+                  <input type="file" id="productImage" accept="image/*">
+                </div>
+              </div>
+            </div>
+    
+            <div class="ShipppingDeliverySection" style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 28px; display: flex">
+              <h2>Shipping and Delivery</h2>
+              <div class="container">
+                <div class="Row1" style="align-self: stretch; padding: 0 40px; height: 118px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 20px; display: flex">
+                  <label for="itemWeight">Item Weight:</label>
+                  <input type="number" id="itemWeight" placeholder="Enter item weight" required>
+                </div>
+    
+                <div class="PackageSizeSection" style="align-self: stretch; height: 167px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 20px; display: flex">
+                  <h3>Package Size (The package you use to ship your product)</h3><br>
+                  <div class="PackageContent" style="width: 100%; justify-content: flex-start; align-items: flex-start; gap: 20px; display: inline-flex">
+                    <div class="QuantitySection" style="width: 33%; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 20px; display: inline-flex">
+                      <label for="itemLength" class="label">Item Length (inches):</label>
+                      <input type="number" id="itemLength" placeholder="Enter package length" required >
+                    </div>
+    
+                    <div class="BreadthSection" style="width: 33%; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 20px; display: inline-flex">
+                      <label for="itemBreadth" class="label">Item Breadth (inches):</label>
+                      <input type="number" id="itemBreadth" placeholder="Enter package breadth" required><br>
+                    </div>
+    
+                    <div class="WidthSection" style="width: 33%; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 20px; display: inline-flex">
+                      <label for="itemWidth" class="label">Item Width (inches):</label>
+                      <input type="number" id="itemWidth" placeholder="Enter package width" required>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="PriceSection" style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 28px; display: flex">
+              <h2>Price</h2>
+              <div class="container">
+                
+                  <div class="PriceTag" style="width: auto; align-self: stretch; padding: 0 40px; height: 118px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 20px; display: flex">
+                    <label for="productPrice" class="label">Price:</label>
+                    <input type="number" id="productPrice" placeholder="Enter Item price" required>
+                  </div>
+
+                  <div class="CompareSection" style="width: auto; align-self: stretch; padding: 0 40px; height: 118px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 20px; display: flex">
+                     <label for="comparePrice" class="label">Compare Price:</label>
+                     <input type="number" id="comparePrice" placeholder="Enter price">
+                  </div>
+                
+              </div>
+            </div>
+
+            <div class="EndButtons" style="align-self: stretch; justify-content: space-between; align-items: flex-start; display: inline-flex">
+              <button class="discardButton" type="button" onclick="discardForm()">Discard Form</button>
+              <button class="addButton" type="button" onclick="addProduct()">Add Product
+                <img src="img/Add-icon.png"  class="AddIcon" style="width: 16.14px; height: 16.14px">
+              </button>
+            </div>       
+        </div>
+      </form>
+
+      <div id="feedback"></div>
+    </div>  
+  </section>
+
+  <script>
+    function productnameFont() {
+    var inputElement = document.getElementById("productName");
+
+    // Customize font style
+    inputElement.style.fontFamily = "Inter, sans-serif";
+    inputElement.style.fontSize = "24px";
+    inputElement.style.color = "#505050";
+    // You can modify any other CSS properties as needed
+  }
+  productnameFont();
+
+
+    function customizeSelect() {
+      var selectElement = document.getElementById("wearType");
+      var selectedOption = selectElement.options[selectElement.selectedIndex];
+  
+      // Customize font size
+      selectElement.style.fontSize = "24px";
+      
+      // Customize font style
+      selectElement.style.fontFamily = "Inter, sans-serif";
+
+      // Customize font color
+      selectElement.style.color = "#505050";
+  
+      // Customize text content
+      selectedOption.textContent = "Selected: " + selectedOption.textContent;
+    }
+    customizeSelect();
+
+  
+  
+  function customizeSelectFont() {
+    var selectElement = document.getElementById("productCategory");
+
+    // Customize font style
+    selectElement.style.fontSize = "24px";
+    selectElement.style.fontFamily = "Inter, sans-serif";
+    selectElement.style.color = "#505050";
+  }
+
+  // Call the function to apply the customization
+  customizeSelectFont();
+
+  function customizeFont(fontSize, fontFamily) {
+    var elements = document.getElementsByTagName('label');
+
+    for (var i = 0; i < elements.length; i++) {
+      var element = elements[i];
+
+      // Customize font style
+      element.style.fontSize = fontSize;
+      element.style.fontFamily = fontFamily;
+    }
+  }
+
+  // Call the function with the desired font options
+  var fontSize = "24px";
+  var fontFamily = "Inter, sans-serif";
+  customizeFont(fontSize, fontFamily);
+
+
+  var elementIds = ['productQuantity','itemWeight', 'itemLength', 'itemBreadth', 'itemWidth', 'productPrice', 'comparePrice'];
+  var fontSize = '24px';
+  var fontFamily = 'Inter, sans-serif';
+  var color = '#505050';
+
+  for (var i = 0; i < elementIds.length; i++) {
+    var element = document.getElementById(elementIds[i]);
+
+    if (element) {
+      element.style.fontSize = fontSize;
+      element.style.fontFamily = fontFamily;
+      element.style.color = color;
+    }
+  }
+
+  
+
+  </script>
+
+</body>
+
+</html>

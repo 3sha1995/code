@@ -1,0 +1,129 @@
+@font-face {
+  font-family: DosisM ;
+  src: url(fonts/Dosis-Medium.ttf);
+}
+body{
+  font-family: DosisM ;
+  background-image: linear-gradient(to bottom, #e76a87, #5a8ca5);
+}
+.track {
+    
+  position: relative;
+  background-color: #ddd;
+  height: 7px;
+  display: flex;
+  margin-bottom: 60px;
+  margin-top: 50px;
+}
+
+
+.track .step {
+  flex-grow: 1;
+  width: 25%;
+  margin-top: -18px;
+  text-align: center;
+  position: relative;
+}
+
+
+.track .step.active:before {
+  background: #89a8ff;
+}
+
+
+.track .step::before {
+  height: 7px;
+  position: absolute;
+  content: "";
+  width: 100%;
+  left: 0;
+  top: 18px;
+}
+
+
+.track .step.active .icon {
+  background: #89a8ff;
+  color: #fff;
+}
+
+
+.track .icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+  border-radius: 100%;
+  background: #ddd;
+}
+
+
+.track .step.active .text {
+  font-weight: 400;
+  color: #000;
+}
+
+
+.track .text {
+  display: block;
+  margin-top: 7px;
+}
+
+.container {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+  margin-bottom: 50px; 
+  margin-left: 10%;
+  width: 80%;
+  
+}
+
+
+.card {
+ 
+position: relative;
+display: flex;
+flex-direction: column;
+min-width: 0;
+word-wrap: break-word;
+background-color: #fff;
+background-clip: border-box;
+border: 1px solid rgba(0, 0, 0, 0.1);
+border-radius: 0.10rem;
+
+}
+
+
+.card-header:first-child {
+border-radius: calc(0.37rem - 1px) calc(0.37rem - 1px) 0 0;
+}
+
+
+.card-header {
+padding: 0.75rem 1.25rem;
+margin-bottom: 0;
+background-color: #fff;
+border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.container2{
+  margin-left: 80%;
+  padding: 20px;
+  display: inline-flexbox;
+  background-color: pink;
+  width: 100px;
+  border-radius: 10px;
+text-align: center;
+}
+
+.btn-warning {
+  text-decoration: none;
+  display: inline;
+color: black;
+}
+.container2:hover{
+  background-image: linear-gradient(to bottom, #f79ab0, #84c2e0);
+}
+.itemside img{
+  width: 100px;
+  height: 100px;
+}

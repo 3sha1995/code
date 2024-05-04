@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="navbar.css">
+    <script src="product.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Group</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn">Categories</a>
+            <div class="dropdown-content">
+              <a href="#">Album</a>
+              <a href="#">Merch</a>
+              <a href="#">Tour merch</a>
+              <a href="#">Seasons Greeting</a>
+            </div>
+          </li>
+          <li><a href="#">About Us</a></li>
+          <div class="logo">
+            <li>FNL9</li>
+          </div>
+          <li class="search-container">
+            <input type="text" placeholder="Search">
+            <button type="submit"><img src="img/bx-search.svg" alt="Search"></button>
+          </li>
+          <li><a href="#" id="cart-link"><img src="img/bx-cart.svg" alt="Cart"></a></li>
+          <li><a href="#"><img src="img/bx-user.svg" alt="User"></a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <img src="img/nj1.jpg" alt="Hero Image" class="hero-image">
+        <div class="hero-content">
+            <h1>Welcome to Our Store!</h1>
+            <p>Discover amazing products you'll love.</p>
+            <a href="#" class="shop-now-btn">Shop Now</a>
+        </div>
+    </section>
+
+    <div class="dress">
+        <!-- Filter buttons -->
+        <button onclick="filterProducts('album')">Album</button>
+        <button onclick="filterProducts('merch')">Merch</button>
+        <button onclick="filterProducts('tour-merch')">Tour Merch</button>
+        <button onclick="filterProducts('seasons-greetings')">Seasons Greetings</button>
+
+        <div class="filters">
+          <label for="sort-by">Sort By:</label>
+          <select id="sort-by">
+            <option value="price-low-high">Price (Low to High)</option>
+            <option value="price-high-low">Price (High to Low)</option>
+            <option value="latest">Latest</option>
+            <option value="oldest">Oldest</option>
+          </select>
+        </div>
+    </div>
+
+    <ul id="product-list"></ul>
+
+    <div class="product-container" data-category="album">
+            <div class="product" data-category="album">
+                <img class="product-image" src="newjeans/a1.png" alt="Product 1">
+                <div class="product-details">
+                  <span class="product-name">Product 1</span>
+                  <span class="product-price">$10.00</span>
+                </div>
+                <button class="add-to-cart-btn" data-product-id="1">ADD TO CART</button>
+              </div>
+          
+              <div class="product">
+                <img class="product-image" src="album/f91.png" alt="Product 2">
+                <div class="product-details">
+                  <span class="product-name">Product 2</span>
+                  <span class="product-price">$15.00</span>
+                </div>
+                <button class="add-to-cart-btn" data-product-id="2">ADD TO CART</button>
+              </div>
+              <div class="product">
+                  <img class="product-image" src="album/ls1.png" alt="Product 2">
+                  <div class="product-details">
+                    <span class="product-name">Product 2</span>
+                    <span class="product-price">$15.00</span>
+                  </div>
+                  <button class="add-to-cart-btn" data-product-id="3">ADD TO CART</button>
+                </div>
+                <div class="product">
+                  <img class="product-image" src="album/nj2.png" alt="Product 2">
+                  <div class="product-details">
+                    <span class="product-name">Product 2</span>
+                    <span class="product-price">$15.00</span>
+                  </div>
+                  <button class="add-to-cart-btn" data-product-id="4">ADD TO CART</button>
+                </div>
+                <div class="product">
+                  <img class="product-image" src="album/f92.png" alt="Product 2">
+                  <div class="product-details">
+                    <span class="product-name">Product 2</span>
+                    <span class="product-price">$15.00</span>
+                  </div>
+                  <button class="add-to-cart-btn" data-product-id="5">ADD TO CART</button>
+                </div>
+                <div class="product">
+                  <img class="product-image" src="album/l2.png" alt="Product 2">
+                  <div class="product-details">
+                    <span class="product-name">Product 2</span>
+                    <span class="product-price">$15.00</span>
+                  </div>
+                  <button class="add-to-cart-btn" data-product-id="6">ADD TO CART</button>
+                </div>
+                <div class="product">
+                  <img class="product-image" src="album/nj3.png" alt="Product 2">
+                  <div class="product-details">
+                    <span class="product-name">Product 2</span>
+                    <span class="product-price">$15.00</span>
+                  </div>
+                    <button class="add-to-cart-btn" data-product-id="7">ADD TO CART</button>
+                </div>
+                <div class="product">
+                  <img class="product-image" src="album/f93.png" alt="Product 2">
+                  <div class="product-details">
+                    <span class="product-name">Product 2</span>
+                    <span class="product-price">$15.00</span>
+                  </div>
+                  <button class="add-to-cart-btn" data-product-id="8">ADD TO CART</button>
+                </div>
+                <div class="product">
+                  <img class="product-image" src="album/ls3.png" alt="Product 2">
+                  <div class="product-details">
+                    <span class="product-name">Product 2</span>
+                    <span class="product-price">$15.00</span>
+                  </div>
+                  <button class="add-to-cart-btn" data-product-id="9">ADD TO CART</button>
+                </div>
+                <div class="product">
+                  <img class="product-image" src="album/nj4.png" alt="Product 2">
+                  <div class="product-details">
+                    <span class="product-name">Product 2</span>
+                    <span class="product-price">$15.00</span>
+                  </div>
+                  <button class="add-to-cart-btn" data-product-id="10">ADD TO CART</button>
+                </div>
+                
+                <div class="product">
+                  <img class="product-image" src="album/f94.png" alt="Product 2">
+                  <div class="product-details">
+                    <span class="product-name">Product 2</span>
+                    <span class="product-price">$15.00</span>
+                  </div>
+                  <button class="add-to-cart-btn" data-product-id="11">ADD TO CART</button>
+                </div>
+                <div class="product">
+                  <img class="product-image" src="album/ls4.png" alt="Product 2">
+                  <div class="product-details">
+                    <span class="product-name">Product 2</span>
+                    <span class="product-price">$15.00</span>
+                  </div>
+                  <button class="add-to-cart-btn" data-product-id="12">ADD TO CART</button>
+                </div>
+                <div class="product">
+                  <img class="product-image" src="album/nj5.png" alt="Product 2">
+                  <div class="product-details">
+                    <span class="product-name">Product 2</span>
+                    <span class="product-price">$15.00</span>
+                  </div>
+                  <button class="add-to-cart-btn" data-product-id="13">ADD TO CART</button>
+                </div>
+                <div class="product">
+                  <img class="product-image" src="album/f95.png" alt="Product 2">
+                  <div class="product-details">
+                    <span class="product-name">Product 2</span>
+                    <span class="product-price">$15.00</span>
+                  </div>
+                  <button class="add-to-cart-btn" data-product-id="14">ADD TO CART</button>
+                </div>
+                <div class="product">
+                  <img class="product-image" src="album/ls5.png" alt="Product 2">
+                  <div class="product-details">
+                    <span class="product-name">Product 2</span>
+                    <span class="product-price">$15.00</span>
+                  </div>
+                  <button class="add-to-cart-btn" data-product-id="15">ADD TO CART</button>
+                </div>
+                <div class="product">
+                  <img class="product-image" src="album/nj6.png" alt="Product 2">
+                  <div class="product-details">
+                    <span class="product-name">Product 2</span>
+                    <span class="product-price">$15.00</span>
+                  </div>
+                  <button class="add-to-cart-btn" data-product-id="16">ADD TO CART</button>
+                </div>
+                <div class="product">
+                  <img class="product-image" src="album/f96.png" alt="Product 2">
+                  <div class="product-details">
+                    <span class="product-name">Product 2</span>
+                    <span class="product-price">$15.00</span>
+                  </div>
+                  <button class="add-to-cart-btn" data-product-id="17">ADD TO CART</button>
+              </div>
+                  <div class="product">
+                      <img class="product-image" src="album/ls6.png" alt="Product 2">
+                      <div class="product-details">
+                        <span class="product-name">Product 2</span>
+                        <span class="product-price">$15.00</span>
+                      </div>
+                      <button class="add-to-cart-btn" data-product-id="18">ADD TO CART</button>
+                    </div>
+                    <div class="product">
+                      <img class="product-image" src="album/nj7.png" alt="Product 2">
+                      <div class="product-details">
+                        <span class="product-name">Product 2</span>
+                        <span class="product-price">$15.00</span>
+                      </div>
+                      <button class="add-to-cart-btn" data-product-id="19">ADD TO CART</button>
+                    </div>
+                    <div class="product">
+                      <img class="product-image" src="album/f97.png" alt="Product 2">
+                      <div class="product-details">
+                        <span class="product-name">Product 2</span>
+                        <span class="product-price">$15.00</span>
+                      </div>
+                      <button class="add-to-cart-btn" data-product-id="20">ADD TO CART</button>
+                    </div>
+                    <div class="product">
+                      <img class="product-image" src="album/ls7.png" alt="Product 2">
+                      <div class="product-details">
+                        <span class="product-name">Product 2</span>
+                        <span class="product-price">$15.00</span>
+                      </div>
+                      <button class="add-to-cart-btn" data-product-id="21">ADD TO CART</button>
+                    </div>
+                    <div class="product">
+                      <img class="product-image" src="album/nj8.png" alt="Product 2">
+                      <div class="product-details">
+                        <span class="product-name">Product 2</span>
+                        <span class="product-price">$15.00</span>
+                      </div>
+                      <button class="add-to-cart-btn" data-product-id="22">ADD TO CART</button>
+                    </div>
+                    <div class="product">
+                      <img class="product-image" src="album/f98.jpg" alt="Product 2">
+                      <div class="product-details">
+                        <span class="product-name">Product 2</span>
+                        <span class="product-price">$15.00</span>
+                      </div>
+                      <button class="add-to-cart-btn" data-product-id="23">ADD TO CART</button>
+                    </div>
+                    <div class="product">
+                      <img class="product-image" src="album/ls8.png" alt="Product 2">
+                      <div class="product-details">
+                        <span class="product-name">Product 2</span>
+                        <span class="product-price">$15.00</span>
+                      </div>
+                      <button class="add-to-cart-btn" data-product-id="24">ADD TO CART</button>
+                    </div>
+                    <div class="product">
+                      <img class="product-image" src="album/f99.png" alt="Product 2">
+                      <div class="product-details">
+                        <span class="product-name">Product 2</span>
+                        <span class="product-price">$15.00</span>
+                      </div>
+                      <button class="add-to-cart-btn" data-product-id="25">ADD TO CART</button>
+                    </div>
+                    <div class="product">
+                      <img class="product-image" src="album/ls9.png" alt="Product 2">
+                      <div class="product-details">
+                        <span class="product-name">Product 2</span>
+                        <span class="product-price">$15.00</span>
+                      </div>
+                      <button class="add-to-cart-btn" data-product-id="26">ADD TO CART</button>
+                    </div>
+                    <div class="product">
+                      <img class="product-image" src="album/f910.jpg" alt="Product 2">
+                      <div class="product-details">
+                        <span class="product-name">Product 2</span>
+                        <span class="product-price">$15.00</span>
+                      </div>
+                      <button class="add-to-cart-btn" data-product-id="27">ADD TO CART</button>
+                    </div>
+                    <div class="product">
+                      <img class="product-image" src="album/ls10.png" alt="Product 2">
+                      <div class="product-details">
+                        <span class="product-name">Product 2</span>
+                        <span class="product-price">$15.00</span>
+                      </div>
+                      <button class="add-to-cart-btn" data-product-id="28">ADD TO CART</button>
+                    </div>
+                    <div class="product">
+                      <img class="product-image" src="album/ls11.png" alt="Product 2">
+                      <div class="product-details">
+                        <span class="product-name">Product 2</span>
+                        <span class="product-price">$15.00</span>
+                      </div>
+                      <button class="add-to-cart-btn" data-product-id="29">ADD TO CART</button>
+                    </div>
+                    </div>
+            
+    </div>
+
+    <div class="product-container" data-category="merch">
+        <div class="product" data-category="album">
+            <img class="product-image" src="newjeans/a1.png" alt="Product 1">
+            <div class="product-details">
+              <span class="product-name">Product 1</span>
+              <span class="product-price">$10.00</span>
+            </div>
+            <button class="add-to-cart-btn" data-product-id="1">ADD TO CART</button>
+          </div>
+      
+          <div class="product">
+            <img class="product-image" src="album/f91.png" alt="Product 2">
+            <div class="product-details">
+              <span class="product-name">Product 2</span>
+              <span class="product-price">$15.00</span>
+            </div>
+            <button class="add-to-cart-btn" data-product-id="2">ADD TO CART</button>
+          </div>
+          <div class="product">
+              <img class="product-image" src="album/ls1.png" alt="Product 2">
+              <div class="product-details">
+                <span class="product-name">Product 2</span>
+                <span class="product-price">$15.00</span>
+              </div>
+              <button class="add-to-cart-btn" data-product-id="3">ADD TO CART</button>
+            </div>
+            <div class="product">
+              <img class="product-image" src="album/nj2.png" alt="Product 2">
+              <div class="product-details">
+                <span class="product-name">Product 2</span>
+                <span class="product-price">$15.00</span>
+              </div>
+              <button class="add-to-cart-btn" data-product-id="4">ADD TO CART</button>
+            </div>
+            <div class="product">
+              <img class="product-image" src="album/f92.png" alt="Product 2">
+              <div class="product-details">
+                <span class="product-name">Product 2</span>
+                <span class="product-price">$15.00</span>
+              </div>
+              <button class="add-to-cart-btn" data-product-id="5">ADD TO CART</button>
+            </div>
+            <div class="product">
+              <img class="product-image" src="album/l2.png" alt="Product 2">
+              <div class="product-details">
+                <span class="product-name">Product 2</span>
+                <span class="product-price">$15.00</span>
+              </div>
+              <button class="add-to-cart-btn" data-product-id="6">ADD TO CART</button>
+            </div>
+            <div class="product">
+              <img class="product-image" src="album/nj3.png" alt="Product 2">
+              <div class="product-details">
+                <span class="product-name">Product 2</span>
+                <span class="product-price">$15.00</span>
+              </div>
+                <button class="add-to-cart-btn" data-product-id="7">ADD TO CART</button>
+            </div>
+            <div class="product">
+              <img class="product-image" src="album/f93.png" alt="Product 2">
+              <div class="product-details">
+                <span class="product-name">Product 2</span>
+                <span class="product-price">$15.00</span>
+              </div>
+              <button class="add-to-cart-btn" data-product-id="8">ADD TO CART</button>
+            </div>
+            <div class="product">
+              <img class="product-image" src="album/ls3.png" alt="Product 2">
+              <div class="product-details">
+                <span class="product-name">Product 2</span>
+                <span class="product-price">$15.00</span>
+              </div>
+              <button class="add-to-cart-btn" data-product-id="9">ADD TO CART</button>
+            </div>
+            <div class="product">
+              <img class="product-image" src="album/nj4.png" alt="Product 2">
+              <div class="product-details">
+                <span class="product-name">Product 2</span>
+                <span class="product-price">$15.00</span>
+              </div>
+              <button class="add-to-cart-btn" data-product-id="10">ADD TO CART</button>
+            </div>
+            
+            <div class="product">
+              <img class="product-image" src="album/f94.png" alt="Product 2">
+              <div class="product-details">
+                <span class="product-name">Product 2</span>
+                <span class="product-price">$15.00</span>
+              </div>
+              <button class="add-to-cart-btn" data-product-id="11">ADD TO CART</button>
+            </div>
+            <div class="product">
+              <img class="product-image" src="album/ls4.png" alt="Product 2">
+              <div class="product-details">
+                <span class="product-name">Product 2</span>
+                <span class="product-price">$15.00</span>
+              </div>
+              <button class="add-to-cart-btn" data-product-id="12">ADD TO CART</button>
+            </div>
+            <div class="product">
+              <img class="product-image" src="album/nj5.png" alt="Product 2">
+              <div class="product-details">
+                <span class="product-name">Product 2</span>
+                <span class="product-price">$15.00</span>
+              </div>
+              <button class="add-to-cart-btn" data-product-id="13">ADD TO CART</button>
+            </div>
+            <div class="product">
+              <img class="product-image" src="album/f95.png" alt="Product 2">
+              <div class="product-details">
+                <span class="product-name">Product 2</span>
+                <span class="product-price">$15.00</span>
+              </div>
+              <button class="add-to-cart-btn" data-product-id="14">ADD TO CART</button>
+            </div>
+            <div class="product">
+              <img class="product-image" src="album/ls5.png" alt="Product 2">
+              <div class="product-details">
+                <span class="product-name">Product 2</span>
+                <span class="product-price">$15.00</span>
+              </div>
+              <button class="add-to-cart-btn" data-product-id="15">ADD TO CART</button>
+            </div>
+            <div class="product">
+              <img class="product-image" src="album/nj6.png" alt="Product 2">
+              <div class="product-details">
+                <span class="product-name">Product 2</span>
+                <span class="product-price">$15.00</span>
+              </div>
+              <button class="add-to-cart-btn" data-product-id="16">ADD TO CART</button>
+            </div>
+            <div class="product">
+              <img class="product-image" src="album/f96.png" alt="Product 2">
+              <div class="product-details">
+                <span class="product-name">Product 2</span>
+                <span class="product-price">$15.00</span>
+              </div>
+              <button class="add-to-cart-btn" data-product-id="17">ADD TO CART</button>
+          </div>
+              <div class="product">
+                  <img class="product-image" src="album/ls6.png" alt="Product 2">
+                  <div class="product-details">
+                    <span class="product-name">Product 2</span>
+                    <span class="product-price">$15.00</span>
+                  </div>
+                  <button class="add-to-cart-btn" data-product-id="18">ADD TO CART</button>
+                </div>
+                <div class="product">
+                  <img class="product-image" src="album/nj7.png" alt="Product 2">
+                  <div class="product-details">
+                    <span class="product-name">Product 2</span>
+                    <span class="product-price">$15.00</span>
+                  </div>
+                  <button class="add-to-cart-btn" data-product-id="19">ADD TO CART</button>
+                </div>
+                <div class="product">
+                  <img class="product-image" src="album/f97.png" alt="Product 2">
+                  <div class="product-details">
+                    <span class="product-name">Product 2</span>
+                    <span class="product-price">$15.00</span>
+                  </div>
+                  <button class="add-to-cart-btn" data-product-id="20">ADD TO CART</button>
+                </div>
+                <div class="product">
+                  <img class="product-image" src="album/ls7.png" alt="Product 2">
+                  <div class="product-details">
+                    <span class="product-name">Product 2</span>
+                    <span class="product-price">$15.00</span>
+                  </div>
+                  <button class="add-to-cart-btn" data-product-id="21">ADD TO CART</button>
+                </div>
+                <div class="product">
+                  <img class="product-image" src="album/nj8.png" alt="Product 2">
+                  <div class="product-details">
+                    <span class="product-name">Product 2</span>
+                    <span class="product-price">$15.00</span>
+                  </div>
+                  <button class="add-to-cart-btn" data-product-id="22">ADD TO CART</button>
+                </div>
+                <div class="product">
+                  <img class="product-image" src="album/f98.jpg" alt="Product 2">
+                  <div class="product-details">
+                    <span class="product-name">Product 2</span>
+                    <span class="product-price">$15.00</span>
+                  </div>
+                  <button class="add-to-cart-btn" data-product-id="23">ADD TO CART</button>
+                </div>
+                <div class="product">
+                  <img class="product-image" src="album/ls8.png" alt="Product 2">
+                  <div class="product-details">
+                    <span class="product-name">Product 2</span>
+                    <span class="product-price">$15.00</span>
+                  </div>
+                  <button class="add-to-cart-btn" data-product-id="24">ADD TO CART</button>
+                </div>
+                <div class="product">
+                  <img class="product-image" src="album/f99.png" alt="Product 2">
+                  <div class="product-details">
+                    <span class="product-name">Product 2</span>
+                    <span class="product-price">$15.00</span>
+                  </div>
+                  <button class="add-to-cart-btn" data-product-id="25">ADD TO CART</button>
+                </div>
+                <div class="product">
+                  <img class="product-image" src="album/ls9.png" alt="Product 2">
+                  <div class="product-details">
+                    <span class="product-name">Product 2</span>
+                    <span class="product-price">$15.00</span>
+                  </div>
+                  <button class="add-to-cart-btn" data-product-id="26">ADD TO CART</button>
+                </div>
+                <div class="product">
+                  <img class="product-image" src="album/f910.jpg" alt="Product 2">
+                  <div class="product-details">
+                    <span class="product-name">Product 2</span>
+                    <span class="product-price">$15.00</span>
+                  </div>
+                  <button class="add-to-cart-btn" data-product-id="27">ADD TO CART</button>
+                </div>
+                <div class="product">
+                  <img class="product-image" src="album/ls10.png" alt="Product 2">
+                  <div class="product-details">
+                    <span class="product-name">Product 2</span>
+                    <span class="product-price">$15.00</span>
+                  </div>
+                  <button class="add-to-cart-btn" data-product-id="28">ADD TO CART</button>
+                </div>
+                <div class="product">
+                  <img class="product-image" src="album/ls11.png" alt="Product 2">
+                  <div class="product-details">
+                    <span class="product-name">Product 2</span>
+                    <span class="product-price">$15.00</span>
+                  </div>
+                  <button class="add-to-cart-btn" data-product-id="29">ADD TO CART</button>
+                </div>
+                </div>
+    </div>
+
+    <div class="pagination" id="pagination"></div>
+
+    <div id="cartContainer" class="cartContainer">
+        <!-- Shopping cart content -->
+        <!-- Add your shopping cart content here -->
+    </div>
+
+    <script src="filters.js"></script>
+</body>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-company">
+            <p>Beauty Shop Company</p>
+            <p>Address: frmatiqua</p>
+        </div>
+        <div class="footer-links">
+            <ul class="link-list">
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Lorem Ipsum 0000</a></li>
+            </ul>
+            <p class="lorem-text">Lorem ipsum lorem ipsum</p>
+            <ul class="link-list">
+                <li><a href="#">Social Media</a></li>
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-info">
+            <ul class="link-list">
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Releases</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+            <ul class="link-list">
+                <li><a

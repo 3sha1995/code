@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="lesserafim.css">
+    <link rel="stylesheet" href="carts.css">
+    <link rel="stylesheet" href="navbar.css">
+    
+  <script src="product.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> </head>
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Categories</a>
+        <div class="dropdown-content">
+          <a href="njalbums.html">New Jeans</a>
+          <a href="formis9.html">Formis_9</a>
+          <a href="lesserafim.html">Lesserafim</a>
+
+        </div>
+      </li>
+    
+      <div class="logo">
+     <img src="img/Screenshot_2024-05-02_212618-removebg-preview.png" alt="">
+    </div>
+      <li class="search-container">
+        <input type="text" placeholder="Search">
+        <button type="submit"><img src="img/bx-search.svg" alt="Search"></button>
+      </li>
+      <div class="dropdownuser">
+        <button class="dropbtn"><img src="img/bx-user.svg" alt="User"></button>
+        <div class="dropdown-content">
+
+          <a href="profile.html">Profile</a>
+          <a href="adminside.html">Admin</a>
+          <a href="loginsignup.html">Login/Signup</a>
+        </div>
+      </div>
+      <li><a href="#" id="cart-link"><img src="img/bx-cart.svg" alt="Cart"></a></li>
+     
+    </ul>
+  </nav>
+ 
+
+
+  <section class="hero">
+    <img src="img/herols.jpg" alt="Hero Image" class="hero-image">
+    <div class="hero-overlay"></div> 
+    <div class="hero-content">
+      <div class="containerhero">
+        <h1 class="gradient-text">Le sserafim</h1> 
+      </div>
+      <p></p>
+    </div>
+  </section>
+
+<div class="dress">
+    <!-- Filter buttons -->
+    <button onclick="filterProducts('album')">Album</button>
+    <button onclick="filterProducts('merch')">Merch</button>
+    <button onclick="filterProducts('tour-merch')">Tour Merch</button>
+    <button onclick="filterProducts('seasons-greetings')">Seasons Greetings</button>
+
+
+<div class="filters">
+  <label for="sort-by">Sort By:</label>
+  <select id="sort-by">
+    <option value="price-low-high">Price (Low to High)</option>
+    <option value="price-high-low">Price (High to Low)</option>
+    <option value="latest">Latest</option>
+    <option value="oldest">oldest</option>
+  </select>
+</div>
+</div>
+</div>
+<ul id="product-list">
+  </ul>
+
+<div class="product-container" data-category="album">
+    <div class="product" data-category="album">
+      <img class="product-image" src="album/ls1.png" alt="Product 1">
+      <div class="product-details">
+        <span class="product-name">'Easy' Weverse ver.</span>
+        <span class="product-price">$19.00</span>
+      </div>
+      <button class="add-to-cart-btn" data-product-id="64">ADD TO CART</button>
+    </div>
+    
+    <div class="product" data-category="album">
+        <img class="product-image" src="album/l2.png" alt="Product 2">
+        <div class="product-details">
+          <span class="product-name">'Easy' Compact ver.</span>
+          <span class="product-price">$55.00</span>
+        </div>
+        <button class="add-to-cart-btn" data-product-id="65">ADD TO CART</button>
+      </div>
+      <div class="product" data-category="album">
+        <img class="product-image" src="album/ls3.png" alt="Product 2">
+        <div class="product-details">
+          <span class="product-name">'Easy' Mini</span>
+          <span class="product-price">$47.00</span>
+        </div>
+          <button class="add-to-cart-btn" data-product-id="66">ADD TO CART</button>
+      </div>
+      <div class="product" data-category="album">
+        <img class="product-image" src="album/ls4.png" alt="Product 2">
+        <div class="product-details">
+          <span class="product-name">'Unforgiven'</span>
+          <span class="product-price">$10.00</span>
+        </div>
+        <button class="add-to-cart-btn" data-product-id="67">ADD TO CART</button>
+      </div>
+      <div class="product" data-category="album">
+        <img class="product-image" src="album/ls5.png" alt="Product 2">
+        <div class="product-details">
+          <span class="product-name">'Unforgiven' Solo</span>
+          <span class="product-price">$54.00</span>
+        </div>
+        <button class="add-to-cart-btn" data-product-id="68">ADD TO CART</button>
+      </div>
+      <div class="product" data-category="album">
+        <img class="product-image" src="album/ls6.png" alt="Product 2">
+        <div class="product-details">
+          <span class="product-name">'Unforgiven'Limited B</span>
+          <span class="product-price">$16.00</span>
+        </div>
+        <button class="add-to-cart-btn" data-product-id="69">ADD TO CART</button>
+      </div>
+      <div class="product" data-category="album">
+            <img class="product-image" src="album/ls7.png" alt="Product 2">
+            <div class="product-details">
+              <span class="product-name">'Unforgiven'Limited A</span>
+              <span class="product-price">$16.00</span>
+            </div>
+            <button class="add-to-cart-btn" data-product-id="70">ADD TO CART</button>
+          </div>
+          <div class="product" data-category="album">
+            <img class="product-image" src="album/ls8.png" alt="Product 2">
+            <div class="product-details">
+              <span class="product-name">'Unforgiven' Weverse</span>
+              <span class="product-price">$27.00</span>
+            </div>
+            <button class="add-to-cart-btn" data-product-id="71">ADD TO CART</button>
+          </div>
+          <div class="product" data-category="album">
+            <img class="product-image" src="album/ls9.png" alt="Product 2">
+            <div class="product-details">
+              <span class="product-name">'Unforgiven'Compact </span>
+              <span class="product-price">$51.00</span>
+            </div>
+            <button class="add-to-cart-btn" data-product-id="72">ADD TO CART</button>
+          </div>
+          <div class="product" data-category="album">
+            <img class="product-image" src="album/ls10.png" alt="Product 2">
+            <div class="product-details">
+              <span class="product-name">'Unforgiven' set</span>
+              <span class="product-price">$50.00</span>
+            </div>
+            <button class="add-to-cart-btn" data-product-id="73">ADD TO CART</button>
+          </div>
+          </div>
+
+          <div class="product-container" data-category="merch">
+            <div class="product" data-category="merch">
+              <img class="product-image" src="merch/ls1.png" alt="Product 1">
+              <div class="product-details">
+                <span class="product-name">Lightsticks</span>
+                <span class="product-price">$40.00</span>
+              </div>
+              <button class="add-to-cart-btn" data-product-id="74">ADD TO CART</button>
+            </div>
+            
+            <div class="product" data-category="merch">
+                <img class="product-image" src="merch/ls2.png" alt="Product 2">
+                <div class="product-details">
+                  <span class="product-name">Necklace </span>
+                  <span class="product-price">$36.00</span>
+                </div>
+                <button class="add-to-cart-btn" data-product-id="75">ADD TO CART</button>
+              </div>
+              <div class="product" data-category="merch">
+                <img class="product-image" src="merch/ls3.png" alt="Product 2">
+                <div class="product-details">
+                  <span class="product-name">Bracelet</span>
+                  <span class="product-price">$36.00</span>
+                </div>
+                  <button class="add-to-cart-btn" data-product-id="76">ADD TO CART</button>
+              </div>
+              <div class="product" data-category="merch">
+                <img class="product-image" src="merch/ls4.png" alt="Product 2">
+                <div class="product-details">
+                  <span class="product-name">Gym bag</span>
+                  <span class="product-price">$56.00</span>
+                </div>
+                <button class="add-to-cart-btn" data-product-id="78">ADD TO CART</button>
+              </div>
+              <div class="product" data-category="merch">
+                <img class="product-image" src="merch/ls5.png" alt="Product 2">
+                <div class="product-details">
+                  <span class="product-name">Ball Cap</span>
+                  <span class="product-price">$36.00</span>
+                </div>
+                <button class="add-to-cart-btn" data-product-id="79">ADD TO CART</button>
+              </div>
+              <div class="product" data-category="merch">
+                <img class="product-image" src="merch/ls6.png" alt="Product 2">
+                <div class="product-details">
+                  <span class="product-name">Photo Mirror</span>
+                  <span class="product-price">$31.00</span>
+                </div>
+                <button class="add-to-cart-btn" data-product-id="80">ADD TO CART</button>
+              </div>
+              <div class="product" data-category="merch">
+                    <img class="product-image" src="merch/ls7.png" alt="Product 2">
+                    <div class="product-details">
+                      <span class="product-name">Backstage Pass Set</span>
+                      <span class="product-price">$23.00</span>
+                    </div>
+                    <button class="add-to-cart-btn" data-product-id="81">ADD TO CART</button>
+                  </div>
+                  <div class="product" data-category="merch">
+                    <img class="product-image" src="merch/ls8.png" alt="Product 2">
+                    <div class="product-details">
+                      <span class="product-name">Instant PhotoCard</span>
+                      <span class="product-price">$7.00</span>
+                    </div>
+                    <button class="add-to-cart-btn" data-product-id="82">ADD TO CART</button>
+                  </div>
+                  <div class="product" data-category="merch">
+                    <img class="product-image" src="merch/ls9.png" alt="Product 2">
+                    <div class="product-details">
+                      <span class="product-name">PhotoCard 10 set</span>
+                      <span class="product-price">$48.00</span>
+                    </div>
+                    <button class="add-to-cart-btn" data-product-id="83">ADD TO CART</button>
+                  </div>
+                  <div class="product" data-category="merch">
+                    <img class="product-image" src="merch/ls10.png" alt="Product 2">
+                    <div class="product-details">
+                      <span class="product-name">Acrylic Stand</span>
+                      <span class="product-price">$18.00</span>
+                    </div>
+                    <button class="add-to-cart-btn" data-product-id="84">ADD TO CART</button>
+                  </div>
+                  </div>
+
+                  <div class="product-container" data-category="tour-merch">
+                    <div class="product" data-category="tour-merch">
+                      <img class="product-image" src="tourmerch/l1.png" alt="Product 1">
+                      <div class="product-details">
+                        <span class="product-name">Postcard Book</span>
+                        <span class="product-price">$18.00</span>
+                      </div>
+                      <button class="add-to-cart-btn" data-product-id="85">ADD TO CART</button>
+                    </div>
+                    
+                    <div class="product" data-category="tour-merch">
+                        <img class="product-image" src="tourmerch/l2.png" alt="Product 2">
+                        <div class="product-details">
+                          <span class="product-name">Keyring</span>
+                          <span class="product-price">$15.00</span>
+                        </div>
+                        <button class="add-to-cart-btn" data-product-id="86">ADD TO CART</button>
+                      </div>
+                      <div class="product" data-category="tour-merch">
+                        <img class="product-image" src="tourmerch/l3.png" alt="Product 2">
+                        <div class="product-details">
+                          <span class="product-name">Image Picket</span>
+                          <span class="product-price">$8.00</span>
+                        </div>
+                          <button class="add-to-cart-btn" data-product-id="87">ADD TO CART</button>
+                      </div>
+                      <div class="product" data-category="tour-merch">
+                        <img class="product-image" src="tourmerch/l4.png" alt="Product 2">
+                        <div class="product-details">
+                          <span class="product-name">PhotoCard</span>
+                          <span class="product-price">$6.00</span>
+                        </div>
+                        <button class="add-to-cart-btn" data-product-id="88">ADD TO CART</button>
+                      </div>
+                      <div class="product" data-category="tour-merch">
+                        <img class="product-image" src="tourmerch/l5.png" alt="Product 2">
+                        <div class="product-details">
+                          <span class="product-name">Image Picket</span>
+                          <span class="product-price">$8.00</span>
+                        </div>
+                        <button class="add-to-cart-btn" data-product-id="89">ADD TO CART</button>
+                      </div>
+                      <div class="product" data-category="tour-merch">
+                        <img class="product-image" src="tourmerch/l6.png" alt="Product 2">
+                        <div class="product-details">
+                          <span class="product-name">Postcard Book</span>
+                          <span class="product-price">$18.00</span>
+                        </div>
+                        <button class="add-to-cart-btn" data-product-id="90">ADD TO CART</button>
+                      </div>
+                      <div class="product" data-category="tour-merch">
+                            <img class="product-image" src="tourmerch/l7.png" alt="Product 2">
+                            <div class="product-details">
+                              <span class="product-name">Luaggage Tag</span>
+                              <span class="product-price">$16.00</span>
+                            </div>
+                            <button class="add-to-cart-btn" data-product-id="91">ADD TO CART</button>
+                          </div>
+                          <div class="product" data-category="tour-merch">
+                            <img class="product-image" src="tourmerch/l9.png" alt="Product 2">
+                            <div class="product-details">
+                              <span class="product-name">Structure Cross Bag</span>
+                              <span class="product-price">$40.00</span>
+                            </div>
+                            <button class="add-to-cart-btn" data-product-id="92">ADD TO CART</button>
+                          </div>
+                          <div class="product" data-category="tour-merch">
+                            <img class="product-image" src="tourmerch/l10.png" alt="Product 2">
+                            <div class="product-details">
+                              <span class="product-name">Bucket Hat</span>
+                              <span class="product-price">$36.00</span>
+                            </div>
+                            <button class="add-to-cart-btn" data-product-id="93">ADD TO CART</button>
+                          </div>
+                          <div class="product" data-category="tour-merch">
+                            <img class="product-image" src="tourmerch/l11.png" alt="Product 2">
+                            <div class="product-details">
+                              <span class="product-name">PhotoCard Binder</span>
+                              <span class="product-price">$26.00</span>
+                            </div>
+                            <button class="add-to-cart-btn" data-product-id="94">ADD TO CART</button>
+                          </div>
+                          </div>
+                             <div class="product-container" data-category="seasons-greetings">
+            <div class="product" data-category="seasons-greetings">
+              <img class="product-image" src="sg/l1.png" alt="Product 1">
+              <div class="product-details">
+                <span class="product-name">Product 1</span>
+                <span class="product-price">$10.00</span>
+              </div>
+              <button class="add-to-cart-btn" data-product-id="95">ADD TO CART</button>
+            </div>
+            <div class="product" data-category="seasons-greetings">
+            <img class="product-image" src="sg/l2.png" alt="Product 1">
+            <div class="product-details">
+              <span class="product-name">Product 1</span>
+              <span class="product-price">$10.00</span>
+            </div>
+            <button class="add-to-cart-btn" data-product-id="96">ADD TO CART</button>
+          </div>
+            
+              </div>
+          <div class="pagination" id="pagination"></div>
+      <div id="cartContainer" class="cartContainer">
+        <div class="cartTab">
+        <h1>Shopping Cart</h1>
+        <div class="listCart">
+            <div class="item">
+                <div class="image">
+                    <img src="./shop/op1.png" alt="">
+                </div>
+                <div class="name">
+                    Nine Part Piece RC5
+                </div>
+                <div class="totalPrice">
+                    $0
+                </div>
+                <div class="quantity">
+                    <input type="number" class="quantity-input" value="1" min="1">
+                </div>
+                <button class="remove-item">Remove</button> <!-- Button to remove the product -->
+            </div>
+        </div>
+        <div class="total">
+        <span>Total Amount Due:</span>
+        <span class="total-amount">$0.00</span> <!-- Correct class name for displaying total amount due -->
+    </div>
+        <div class="btn">
+            <button class="close">Close</button>
+            <a href="checkout.html" class="checkOut">Checkout</a>
+        </div>
+      </div>
+      </div>
+  </div>
+  <script src="cart.js"></script>
+ 
+  <script src="shoppingCart.js"></script>
+  <script src="filter.js"></script>
+
+</body>
+<footer class="footer">
+    <div class="footer-container">
+      <div class="footer-copyright">
+        <p>&copy; 2024 FNL9</p>
+      </div>
+      <div class="footer-links">
+        <ul class="link-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+      <div class="footer-contact">
+        <p><strong>Contact Us:</strong></p>
+        <p>Email: <a href="FNL9@gmail.com">FNL9@gmail.com</a></p>
+        <p>Phone: +64 (09) 0000000000</p>
+      </div>
+      <div class="footer-legal">
+        <p><a href="#">Terms & Conditions</a> | <a href="#">Privacy Policy</a></p>
+      </div>
+      
+    </div>
+  </footer>
+</html>
